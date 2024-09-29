@@ -1,0 +1,105 @@
+[submodule "git-submodules/test-corpus-medieval-manuscripts-oxford"]
+	path = git-submodules/test-corpus-medieval-manuscripts-oxford
+	url = git@github.com:delb-xml/test-corpus-medieval-manuscripts-oxford.git
+[submodule "git-submodules/test-corpus-faust-edition"]
+	path = git-submodules/test-corpus-faust-edition
+	url = git@github.com:delb-xml/test-corpus-faust-edition.git
+[submodule "git-submodules/test-corpus-ELTeC-fra"]
+	path = git-submodules/test-corpus-ELTeC-fra
+	url = git@github.com:delb-xml/test-corpus-ELTeC-fra.git
+[submodule "git-submodules/test-corpus-verne"]
+	path = git-submodules/test-corpus-verne
+	url = git@github.com:delb-xml/test-corpus-verne.git
+[submodule "test-corpus-casebooks"]
+	path = git-submodules/test-corpus-casebooks
+	url = git@github.com:delb-xml/test-corpus-casebooks.git
+[submodule "git-submodules/test-corpus-disco"]
+	path = git-submodules/test-corpus-disco
+	url = git@github.com:delb-xml/test-corpus-disco.git
+[submodule "git-submodules/test-corpus-ELTeC-gsw"]
+	path = git-submodules/test-corpus-ELTeC-gsw
+	url = git@github.com:delb-xml/test-corpus-ELTeC-gsw.git
+[submodule "git-submodules/test-corpus-ELTeC-hrv"]
+	path = git-submodules/test-corpus-ELTeC-hrv
+	url = git@github.com:delb-xml/test-corpus-ELTeC-hrv.git
+[submodule "test-corpus-ride"]
+	path = git-submodules/test-corpus-ride
+	url = git@github.com:delb-xml/test-corpus-ride.git
+[submodule "git-submodules/test-corpus-ELTeC-ukr"]
+	path = git-submodules/test-corpus-ELTeC-ukr
+	url = git@github.com:delb-xml/test-corpus-ELTeC-ukr.git
+[submodule "test-corpus-ELTeC-spa"]
+	path = git-submodules/test-corpus-ELTeC-spa
+	url = https://github.com/delb-xml/test-corpus-ELTeC-spa
+[submodule "git-submodules/test-corpus-ELTeC-srp"]
+	path = git-submodules/test-corpus-ELTeC-srp
+	url = git@github.com:delb-xml/test-corpus-ELTeC-srp.git
+[submodule "test-corpus-ELTeC-slv"]
+	path = git-submodules/test-corpus-ELTeC-slv
+	url = git@github.com:delb-xml/test-corpus-ELTeC-slv.git
+[submodule "git-submodules/test-corpus-ELTeC-rom"]
+	path = git-submodules/test-corpus-ELTeC-rom
+	url = git@github.com:delb-xml/test-corpus-ELTeC-rom.git
+[submodule "test-corpus-ELTeC-pol"]
+	path = git-submodules/test-corpus-ELTeC-pol
+	url = git@github.com:delb-xml/test-corpus-ELTeC-pol.git
+[submodule "test-corpus-ELTeC-por"]
+	path = git-submodules/test-corpus-ELTeC-por
+	url = git@github.com:delb-xml/test-corpus-ELTeC-por.git
+[submodule "git-submodules/test-corpus-ELTeC-ita"]
+	path = git-submodules/test-corpus-ELTeC-ita
+	url = git@github.com:delb-xml/test-corpus-ELTeC-ita.git
+[submodule "test-corpus-papyri"]
+	path = git-submodules/test-corpus-papyri
+	url = git@github.com:delb-xml/test-corpus-papyri.git
+[submodule "git-submodules/test-corpus-ELTeC-hun"]
+	path = git-submodules/test-corpus-ELTeC-hun
+	url = git@github.com:delb-xml/test-corpus-ELTeC-hun.git
+[submodule "test-corpus-ELTeC-fra-ext2"]
+	path = git-submodules/test-corpus-ELTeC-fra-ext2
+	url = git@github.com:delb-xml/test-corpus-ELTeC-fra-ext2.git
+[submodule "test-corpus-ELTeC-rus"]
+	path = git-submodules/test-corpus-ELTeC-rus
+	url = git@github.com:delb-xml/test-corpus-ELTeC-rus.git
+[submodule "test-corpus-ELTeC-nor"]
+	path = git-submodules/test-corpus-ELTeC-nor
+	url = git@github.com:delb-xml/test-corpus-ELTeC-nor.git
+[submodule "git-submodules/test-corpus-ELTeC-lit"]
+	path = git-submodules/test-corpus-ELTeC-lit
+	url = git@github.com:delb-xml/test-corpus-ELTeC-lit.git
+[submodule "test-corpus-ELTeC-deu"]
+	path = git-submodules/test-corpus-ELTeC-deu
+	url = git@github.com:delb-xml/test-corpus-ELTeC-deu.git
+[submodule "test-corpus-ELTeC-fra-ext1"]
+	path = git-submodules/test-corpus-ELTeC-fra-ext1
+	url = git@github.com:delb-xml/test-corpus-ELTeC-fra-ext1.git
+[submodule "git-submodules/test-corpus-ELTeC-swe"]
+	path = git-submodules/test-corpus-ELTeC-swe
+	url = git@github.com:delb-xml/test-corpus-ELTeC-swe.git
+[submodule "git-submodules/test-corpus-ELTeC-por-ext"]
+	path = git-submodules/test-corpus-ELTeC-por-ext
+	url = git@github.com:delb-xml/test-corpus-ELTeC-por-ext.git
+[submodule "git-submodules/test-corpus-ELTeC-lav"]
+	path = git-submodules/test-corpus-ELTeC-lav
+	url = git@github.com:delb-xml/test-corpus-ELTeC-lav.git
+[submodule "git-submodules/test-corpus-ELTeC-eng-ext"]
+	path = git-submodules/test-corpus-ELTeC-eng-ext
+	url = git@github.com:delb-xml/test-corpus-ELTeC-eng-ext.git
+[submodule "git-submodules/test-corpus-ELTeC-srp-ext"]
+	path = git-submodules/test-corpus-ELTeC-srp-ext
+	url = git@github.com:delb-xml/test-corpus-ELTeC-srp-ext.git
+[submodule "git-submodules/test-corpus-ELTeC-gre"]
+	path = git-submodules/test-corpus-ELTeC-gre
+	url = git@github.com:delb-xml/test-corpus-ELTeC-gre.git
+[submodule "git-submodules/test-corpus-ELTeC-lit-ext"]
+	path = git-submodules/test-corpus-ELTeC-lit-ext
+	url = git@github.com:delb-xml/test-corpus-ELTeC-lit-ext.git
+[submodule "git-submodules/test-corpus-atalanta-texts"]
+	path = git-submodules/test-corpus-atalanta-texts
+	url = git@github.com:delb-xml/test-corpus-atalanta-texts.git
+[submodule "git-submodules/test.-corpus-archives-parlementaires"]
+	path = git-submodules/test-corpus-archives-parlementaires
+	url = git@github.com:delb-xml/test.-corpus-archives-parlementaires.git
+[submodule "test-corpus-ELTeC-eng"]
+	path = git-submodules/test-corpus-ELTeC-eng
+	url = git@github.com:delb-xml/test-corpus-ELTeC-eng.git
