@@ -30,7 +30,7 @@
 	url = git@github.com:delb-xml/test-corpus-ELTeC-ukr.git
 [submodule "test-corpus-ELTeC-spa"]
 	path = git-submodules/ELTeC-spa
-	url = https://github.com/delb-xml/test-corpus-ELTeC-spa
+	url = git@github.com:delb-xml/test-corpus-ELTeC-spa.git
 [submodule "git-submodules/test-corpus-ELTeC-srp"]
 	path = git-submodules/ELTeC-srp
 	url = git@github.com:delb-xml/test-corpus-ELTeC-srp.git
