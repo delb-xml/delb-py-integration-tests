@@ -1,6 +1,9 @@
 black
 flake8
+fs
 httpx
 mypy
 stamina
+tqdm
+types-tqdm
 # and a delb installation
