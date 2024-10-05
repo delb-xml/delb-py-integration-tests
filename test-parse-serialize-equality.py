@@ -1,14 +1,13 @@
 from __future__ import annotations
 
 import argparse
+import logging
 import multiprocessing as mp
-from fs.memoryfs import MemoryFS
-from fs.osfs import OSFS
+from datetime import datetime
 from os import sync as sync_disk
 from pathlib import Path
 from random import randrange
 from sys import stdout
-from traceback import print_exception
 from typing import TYPE_CHECKING, Final, Iterable, Iterator, Optional
 
 from fs.memoryfs import MemoryFS
@@ -32,6 +31,12 @@ if TYPE_CHECKING:
 DIT_PATH: Final = Path(__file__).parent
 
 
+log = logging.getLogger(Path(__file__).stem)
+
+
+#
+
+
 def load_file(filesystem: FS, path: Path, **options) -> Optional[Document]:
     try:
         with filesystem.open(str(path), mode="rb") as f:
@@ -39,7 +44,7 @@ def load_file(filesystem: FS, path: Path, **options) -> Optional[Document]:
             document.config.source = f"file:///{path}"
             return document
     except FailedDocumentLoading as e:
-        print(f"Failed to load {path.name}: {e.excuses[path_loader]}")
+        log.error(f"Failed to load {path.name}: {e.excuses[path_loader]}")
         return None
 
 
@@ -48,8 +53,8 @@ def save_file(document: Document, filesystem: FS, path: Path, **options) -> bool
         with filesystem.open(str(path), mode="wb") as f:
             document.write(f, **options)  # type: ignore
     except Exception as e:
-        print(f"Failed to save {path.name}:")
-        print_exception(e, file=stdout)
+        log.error(f"Failed to save {path.name}:")
+        log.exception(e)
         return False
     else:
         return True
@@ -79,7 +84,7 @@ def save_and_compare_file(
     if comparison_result := compare_trees(origin.root, copy_.root):
         work_fs.remove(str(result_file))
     else:
-        print(f"Unequal document produced: {result_file}\n{comparison_result}")
+        log.error(f"Unequal document produced: {result_file}\n{comparison_result}")
 
 
 def parse_and_serialize_and_compare(src_fs: OSFS, work_fs: MemoryFS, file: Path):
@@ -123,6 +128,8 @@ def parse_and_serialize_and_compare(src_fs: OSFS, work_fs: MemoryFS, file: Path)
 
 
 def dispatch_batch(files_list: Iterable[Path], source_root: Path, results_folder: Path):
+    globals()["log"] = setup_logger()
+    log.setLevel(logging.DEBUG)
     work_fs = MemoryFS()
     for file in files_list:
         try:
@@ -132,8 +139,8 @@ def dispatch_batch(files_list: Iterable[Path], source_root: Path, results_folder
                 file=file.relative_to(source_root),
             )
         except Exception as e:
-            print(f"Unhandled exception while testing {file}:")
-            print_exception(e, file=stdout)
+            log.error(f"Unhandled exception while testing {file}:")
+            log.exception(e)
 
     stdout.flush()
     keep_erred_files(results_folder, work_fs)
@@ -176,9 +183,28 @@ def parse_args() -> argparse.Namespace:
     return parser.parse_args()
 
 
+def setup_logger():
+    logger = mp.get_logger()
+    handler = logging.FileHandler(
+        (
+            DIT_PATH
+            / "logs"
+            / f"{log.name}-{datetime.now().isoformat(timespec='minutes')}.log"
+        )
+    )
+    handler.setFormatter(logging.Formatter("[%(process)d] %(message)s"))
+    if not len(logger.handlers):
+        logger.addHandler(handler)
+
+    return logger
+
+
 def main():
     mp.set_start_method("forkserver")
     args = parse_args()
+    globals()["log"] = setup_logger()
+    log.setLevel(logging.INFO)
+
     results_path: Final = args.results_path / "parsing_and_serializing"
 
     all_files: list[Path] = []
@@ -202,7 +228,7 @@ def main():
                     dispatched_tasks.remove(task)
                     progressbar.update(n=args.batch_size)
 
-    print(f"\nTested against {all_files_size} documents.")
+    log.info(f"Tested against {all_files_size} documents.")
 
     for path, directories, files in results_path.walk(top_down=False):
         if len(directories) + len(files) == 0:

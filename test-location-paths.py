@@ -1,8 +1,10 @@
 from __future__ import annotations
 
 import argparse
+import logging
 import multiprocessing as mp
 import random
+from datetime import datetime
 from itertools import batched
 from pathlib import Path
 from typing import TYPE_CHECKING, Final
@@ -26,6 +28,7 @@ if TYPE_CHECKING:
 DIT_PATH: Final = Path(__file__).parent
 
 
+log = logging.getLogger(Path(__file__).stem)
 traverse = get_traverser(True, True, True)
 
 
@@ -38,10 +41,7 @@ def verify_location_paths(file: Path, sample_volume: int):
             ),
         )
     except FailedDocumentLoading as exc:
-        print(
-            f"\nFailed to load {file.name}: {exc.excuses[path_loader]}",
-            end="",
-        )
+        log.error(f"Failed to load {file.name}: {exc.excuses[path_loader]}")
         return
 
     root = document.root
@@ -52,8 +52,8 @@ def verify_location_paths(file: Path, sample_volume: int):
         assert isinstance(node, TagNode)
         query_results = document.xpath(node.location_path)
         if not (query_results.size == 1 and query_results.first is node):
-            print(
-                f"\nXPath query `{node.location_path}` in {file} yielded unexpected "
+            log.error(
+                f"XPath query `{node.location_path}` in {file} yielded unexpected "
                 "results."
             )
 
@@ -63,7 +63,8 @@ def dispatch_batch(files: Iterable[Path], sample_volume: int):
         try:
             verify_location_paths(file, sample_volume)
         except Exception as e:
-            print(f"\nUnhandled exception while testing {file}: {e}")
+            log.error(f"Unhandled exception while testing {file}:")
+            log.exception(e)
 
 
 def parse_args() -> argparse.Namespace:
@@ -80,6 +81,15 @@ def parse_args() -> argparse.Namespace:
 def main():
     mp.set_start_method("forkserver")
     args = parse_args()
+    logging.basicConfig(
+        filename=(
+            DIT_PATH
+            / "logs"
+            / f"{log.name}-{datetime.now().isoformat(timespec='minutes')}.log"
+        ),
+        format="%(message)s",
+        level=logging.DEBUG,
+    )
 
     all_files: list[Path] = []
     for directory_path, _, files in args.corpus_path.walk(follow_symlinks=True):
@@ -102,11 +112,13 @@ def main():
                     dispatched_tasks.remove(task)
                     progressbar.update(n=args.batch_size)
 
-    print(
-        f"\n\nTested against {sample_size} *randomly* selected out of {all_files_size} "
+    log.info(
+        f"Tested against {sample_size} *randomly* selected out of {all_files_size} "
         f"documents."
-        f"\n{args.sample_volume}% of the tag nodes' `location_path` "
-        f"attribute were verified per document."
+    )
+    log.info(
+        f"{args.sample_volume}% of the tag nodes' `location_path` attribute were "
+        "verified per document."
     )
 
 
