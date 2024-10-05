@@ -1,0 +1,137 @@
+<?xml-model href="https://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?><?xml-model href="https://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" type="application/xml"
+	schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="Q.01.19130603.GAP.01">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title>Guillaume Apollinaire an Herwarth Walden, 3. Juni 1913, Paris</title>
+                <editor>
+                    <persName ref="http://d-nb.info/gnd/1013156242">
+                        <forename>Lea</forename>
+                        <surname>Müller-Dannhausen</surname>
+                    </persName>
+                </editor>
+                <respStmt>
+                    <persName ref="https://orcid.org/0000-0002-0953-2818">
+                        <forename>Torsten</forename>
+                        <surname>Schrade</surname>
+                    </persName>
+                    <resp>
+                        <note>Herausgeber</note>
+                    </resp>
+                </respStmt>
+                <respStmt>
+                    <persName ref="https://orcid.org/0000-0003-2423-7144">
+                        <forename>Marjam</forename>
+                        <surname>Trautmann</surname>
+                    </persName>
+                    <resp>
+                        <note>Herausgeberin</note>
+                    </resp>
+                </respStmt>
+            </titleStmt>
+            <publicationStmt>
+                <publisher>
+                    <ref target="http://www.adwmainz.de">Akademie der Wissenschaften und der Literatur | Mainz</ref>
+                </publisher>
+                <pubPlace ref="http://sws.geonames.org/2874225">Mainz</pubPlace>
+                <availability>
+                    <licence target="https://creativecommons.org/licenses/by/4.0/">This file is licensed under the terms of the Creative-Commons-License CC BY 4.0</licence>
+                </availability>
+                <idno type="file">Q.01.19130603.GAP.01.xml</idno>
+                <idno type="uri">https://sturm-edition.de/id/Q.01.19130603.GAP.01</idno>
+            </publicationStmt>
+            <sourceDesc>
+                <bibl>Q.01.19130603.GAP.01, Guillaume Apollinaire an Herwarth Walden, 3. Juni 1913, Paris, 
+                    bearbeitet von Lea Müller-Dannhausen, in: Der STURM. Digitale
+                    Quellenedition zur Geschichte der internationalen Avantgarde, erarbeitet und
+                    herausgegeben von Marjam Trautmann und Torsten Schrade. Mainz, Akademie der
+                    Wissenschaften und der Literatur.</bibl>
+                <msDesc>
+                    <msIdentifier>
+                        <country>DE</country>
+                        <settlement>Berlin</settlement>
+                        <repository>Staatsbibliothek zu Berlin Preußischer Kulturbesitz,
+                            Handschriftenabteilung, Sturm-Archiv I, Apollinaire, Guillaume</repository>
+                        <idno type="uri">http://resolver.staatsbibliothek-berlin.de/SBB0000DA5400000000</idno>
+                    </msIdentifier>
+                </msDesc>
+            </sourceDesc>
+        </fileDesc>
+        <xenoData type="uri">http://kalliope-verbund.info/DE-611-HS-1910444</xenoData>
+        <xenoData type="url">https://content.staatsbibliothek-berlin.de/dc/PPN746597509.mets.xml</xenoData>
+        <profileDesc>
+            <correspDesc key="Bl.4" ref="https://sturm-edition.de/id/Q.01.19130603.GAP.01">
+                <correspAction type="sent">
+                    <persName key="P.0000186" ref="http://d-nb.info/gnd/118503634">Guillaume Apollinaire</persName>
+                    <placeName key="O.0000010" ref="http://sws.geonames.org/2988507">Paris</placeName>
+                    <date when="1913-06-03"/>
+                </correspAction>
+                <correspAction type="received">
+                    <persName key="P.0000001" ref="http://d-nb.info/gnd/118770950">Herwarth Walden</persName>
+                    <placeName key="O.0000002" ref="http://sws.geonames.org/2950159">Potsdamerstrasse 134a, Berlin W.9.</placeName>
+                </correspAction>
+            </correspDesc>
+        </profileDesc>
+        <revisionDesc>
+            <listChange>
+                <change>
+                    <date when="2020-11-19" n="1"/>
+                </change>
+            </listChange>
+        </revisionDesc>
+    </teiHeader>
+    <facsimile>
+        <graphic n="4r" url="http://content.staatsbibliothek-berlin.de/dms/PPN746597509/1200/0/00000001.jpg"/>
+        <graphic n="4v" url="http://content.staatsbibliothek-berlin.de/dms/PPN746597509/1200/0/00000002.jpg"/>
+        <graphic n="Farbkeil" url="http://content.staatsbibliothek-berlin.de/dms/PPN746597509/1200/0/00000003.jpg"/>
+    </facsimile>
+    <text type="postcard">
+        <body>
+            <div type="address">
+                <pb xml:id="S.4r" n="4r" facs="http://resolver.staatsbibliothek-berlin.de/SBB0000DA5400000001"/>                
+                <ab type="recipient">
+                    <address>
+                        <addrLine>A Monsieur Herwarth Walden</addrLine>
+                        <addrLine>Verlag der Sturm</addrLine>
+                        <addrLine>Potzdamerstr. 134a</addrLine>
+                        <addrLine>
+                            <hi rend="twice-underline">Berlin W. 9</hi>
+                        </addrLine>
+                        <addrLine>
+                            <hi rend="underline">Allemagne</hi>
+                        </addrLine>
+                    </address>
+                </ab>
+            </div>
+            <div type="content">
+                <opener>
+                    <salute>Lieber <persName key="P.0000001" ref="http://d-nb.info/gnd/118770950">Freund</persName> -</salute>
+                </opener>
+                <p>erhalten die <term type="artwork" key="W.0000176">Hölzstücke</term> aber waren keine proben dazu Sie sollen zehn stücke schicken – <term type="article" key="W.0000174">Pariser Brief</term> wird bald kommen es ist auf deutsch geschrieben dafür warte ich <unclear>jeden</unclear> Tag weil ich <unclear>
+                        <hi rend="line-through">mich</hi>
+                    </unclear> <hi rend="line-through">besser d</hi> will ein schön deutsch schreiben –
+                    <persName key="P.0000187" ref="http://d-nb.info/gnd/118778927">Marie Laurencin</persName> ist in <placeName key="O.0000023" ref="http://sws.geonames.org/6269131">England</placeName> – seine <persName key="P.0000195" ref="P.0000194">Mutter</persName> ist gestorben <persName key="P.0000187" ref="http://d-nb.info/gnd/118778927">Marie Laurencin</persName> kommt in <placeName key="O.0000010" ref="http://sws.geonames.org/2988507">Paris</placeName> zurück nächste Woche – dann schreibt Sie – schicken Sie mir anecdoten über Sie selbst un wenn Sie manche über <persName key="P.0000196" ref="http://d-nb.info/gnd/118553216">Arno Holz</persName> kennen.</p>
+                <p>
+                    <persName key="P.0000197" ref="http://d-nb.info/gnd/119552930">Hervieu</persName> ist von <orgName type="academy" key="K.0000003" ref="http://d-nb.info/gnd/1022924-3">Academie Française</orgName> so wie <persName key="P.0000198" ref="http://d-nb.info/gnd/118619853">Sudermann</persName>
+                </p>
+                <closer>
+                    <salute>Herzlichen Gruße von</salute> <signed>
+                        <persName key="P.0000186" ref="http://d-nb.info/gnd/118503634">Guillaume Apollinaire</persName>
+                    </signed>
+                </closer>
+                <postscript>
+                    <p>Haben Sie mein Büch <term type="literaryWork" key="W.0000177" ref="http://d-nb.info/gnd/4316260-5">
+                        <foreign xml:lang="fr">
+                                <hi rend="underline">Alcools</hi>
+                            </foreign>
+                    </term> erhalten Wie werden wir machen mit die ubersetzung von die <term type="book" key="W.0000173" source="http://gallica.bnf.fr/ark:/12148/btv1b52508734s" ref="http://d-nb.info/gnd/4552880-9">
+                        <foreign xml:lang="fr">
+                                <hi rend="underline">peintres cubistes</hi>
+                            </foreign>
+                        </term>?</p>
+                </postscript>
+            </div>
+        </body>
+    </text>
+</TEI>

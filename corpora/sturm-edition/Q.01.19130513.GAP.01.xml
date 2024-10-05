@@ -1,0 +1,137 @@
+<?xml-model href="https://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?><?xml-model href="https://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" type="application/xml"
+	schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="Q.01.19130513.GAP.01">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title>Guillaume Apollinaire an Herwarth Walden, 13. Mai 1913, Paris</title>
+                <editor>
+                    <persName ref="http://d-nb.info/gnd/1013156242">
+                        <forename>Lea</forename>
+                        <surname>Müller-Dannhausen</surname>
+                    </persName>
+                </editor>
+                <respStmt>
+                    <persName ref="https://orcid.org/0000-0002-0953-2818">
+                        <forename>Torsten</forename>
+                        <surname>Schrade</surname>
+                    </persName>
+                    <resp>
+                        <note>Herausgeber</note>
+                    </resp>
+                </respStmt>
+                <respStmt>
+                    <persName ref="https://orcid.org/0000-0003-2423-7144">
+                        <forename>Marjam</forename>
+                        <surname>Trautmann</surname>
+                    </persName>
+                    <resp>
+                        <note>Herausgeberin</note>
+                    </resp>
+                </respStmt>
+            </titleStmt>
+            <publicationStmt>
+                <publisher>
+                    <ref target="http://www.adwmainz.de">Akademie der Wissenschaften und der Literatur | Mainz</ref>
+                </publisher>
+                <pubPlace ref="http://sws.geonames.org/2874225">Mainz</pubPlace>
+                <availability>
+                    <licence target="https://creativecommons.org/licenses/by/4.0/">This file is licensed under the terms of the Creative-Commons-License CC BY 4.0</licence>
+                </availability>
+                <idno type="file">Q.01.19130513.GAP.01.xml</idno>
+                <idno type="uri">https://sturm-edition.de/id/Q.01.19130513.GAP.01</idno>
+            </publicationStmt>
+            <sourceDesc>
+                <bibl>Q.01.19130513.GAP.01, Guillaume Apollinaire an Herwarth Walden, 13. Mai 1913, Paris, 
+                    bearbeitet von Lea Müller-Dannhausen, in: Der STURM. Digitale
+                    Quellenedition zur Geschichte der internationalen Avantgarde, erarbeitet und
+                    herausgegeben von Marjam Trautmann und Torsten Schrade. Mainz, Akademie der
+                    Wissenschaften und der Literatur.</bibl>
+                <msDesc>
+                    <msIdentifier>
+                        <country>DE</country>
+                        <settlement>Berlin</settlement>
+                        <repository>Staatsbibliothek zu Berlin Preußischer Kulturbesitz,
+                            Handschriftenabteilung, Sturm-Archiv I, Apollinaire, Guillaume</repository>
+                        <idno type="uri">http://resolver.staatsbibliothek-berlin.de/SBB0000DA5300000000</idno>
+                    </msIdentifier>
+                </msDesc>
+            </sourceDesc>
+        </fileDesc>
+        <xenoData type="uri">http://kalliope-verbund.info/DE-611-HS-1910443</xenoData>
+        <xenoData type="url">https://content.staatsbibliothek-berlin.de/dc/PPN746597495.mets.xml</xenoData>
+        <profileDesc>
+            <correspDesc key="Bl.3" ref="https://sturm-edition.de/id/Q.01.19130513.GAP.01">
+                <correspAction type="sent">
+                    <persName key="P.0000186" ref="http://d-nb.info/gnd/118503634">Guillaume Apollinaire</persName>
+                    <placeName key="O.0000010" ref="http://sws.geonames.org/2988507">Paris</placeName>
+                    <date when="1913-05-13"/>
+                </correspAction>
+                <correspAction type="received">
+                    <persName key="P.0000001" ref="http://d-nb.info/gnd/118770950">Herwarth Walden</persName>
+                    <placeName key="O.0000002" ref="http://sws.geonames.org/2950159">Potsdamerstrasse 134a, Berlin W.9.</placeName>
+                </correspAction>
+            </correspDesc>
+        </profileDesc>
+        <revisionDesc>
+            <listChange>
+                <change>
+                    <date when="2020-11-19" n="1"/>
+                </change>
+            </listChange>
+        </revisionDesc>
+    </teiHeader>
+    <facsimile>
+        <graphic n="3r" url="http://content.staatsbibliothek-berlin.de/dms/PPN746597495/1200/0/00000001.jpg"/>
+        <graphic n="3v" url="http://content.staatsbibliothek-berlin.de/dms/PPN746597495/1200/0/00000002.jpg"/>
+        <graphic n="Farbkeil" url="http://content.staatsbibliothek-berlin.de/dms/PPN746597495/1200/0/00000003.jpg"/>
+    </facsimile>
+    <text type="postcard">
+        <body>
+            <div type="address">
+                <pb xml:id="S.3r" n="3r" facs="http://resolver.staatsbibliothek-berlin.de/SBB0000DA5300000001"/>                
+                <ab type="recipient">
+                    <address>
+                        <addrLine>Monsieur Herwarth Walden</addrLine>
+                        <addrLine>Verlag</addrLine>                        
+                        <addrLine>Der Sturm</addrLine>
+                        <addrLine>134<hi rend="super">a</hi> Potsdamerstrasse</addrLine>
+                        <addrLine>Berlin</addrLine>
+                    </address>
+                </ab>
+            </div>
+            <div type="content">
+                <opener>
+                    <salute>Mein lieber <persName key="P.0000001" ref="http://d-nb.info/gnd/118770950">Freund</persName> -</salute>
+                </opener> 
+                <p>Ich habe mit die <foreign xml:lang="fr">Salons</foreign> sou viel zu tun gehabt und kein zeit, Ihnem zu Schreiben. <date when="1913-05-13">Heute</date> Abend schicke ich mein <term type="article" key="W.0000174">
+                    <hi rend="underline">Pariser Brief</hi>
+                    </term>.</p>
+                <p>Bald schicke ich die <term type="lecture" key="W.0000175">
+                    <foreign xml:lang="fr">Conférences</foreign>
+                    </term>
+                    <note>Es könnte sich um Vorträge handeln, die Apollinaire im Rahmen des Ersten Deutschen Herbstsalons 1913 in Berlin plante (vgl. Rehage, Philipp [Hrsg.]: Correspondance Guillaume Apollinaire – Herwarth Walden (Der Sturm) 1913–1915. Caen 2007, S. 58.) oder um eine für einen früheren Zeitpunkt geplante Vortragsreihe in Berlin bzw. um einführende Vorträge zu STURM-Ausstellungen außerhalb Berlins (vgl. Bohn, Willard: Apollinaire and the International Avant-Garde. New York 1997, S. 91f.).</note> –</p>
+                <p>Bitte schreiben Sie an <persName key="P.0000187" ref="http://d-nb.info/gnd/118778927">Marie Laurencin</persName>
+                    <pb xml:id="S.3v" n="3v" facs="http://resolver.staatsbibliothek-berlin.de/SBB0000DA5300000002"/> selbst dann bekommen Sie die Bilder – schicken Sie mir zurück die <term type="artwork" key="W.0000176">Hölzes engraviert</term>
+                    <note>Drei Holzschnitte von Marie Laurencin druckte Walden im April und Mai 1913 in „Der Sturm“ ab. Vgl. Walden, Herwarth [Hrsg.]: Der Sturm. Halbmonatsschrift für Kultur und die Künste 156/157 (1913), S. 9 u. S. 13, URL: <ref target="http://digi.ub.uni-heidelberg.de/diglit/sturm1913_1914/0012">http://digi.ub.uni-heidelberg.de/diglit/sturm1913_1914/0012</ref> u. <ref target="http://digi.ub.uni-heidelberg.de/diglit/sturm1913_1914/0016">http://digi.ub.uni-heidelberg.de/diglit/sturm1913_1914/0016</ref> (Aufruf 26.10.2019); Walden, Herwarth [Hrsg.]: Der Sturm. Halbmonatsschrift für Kultur und die Künste 160/161 (1913), S. 27, URL:<ref target="http://digi.ub.uni-heidelberg.de/diglit/sturm1913_1914/0030">http://digi.ub.uni-heidelberg.de/diglit/sturm1913_1914/0030</ref> (Aufruf 26.10.2019).</note> von <persName key="P.0000187" ref="http://d-nb.info/gnd/118778927">Marie Laurencin</persName>. Ich Brauche. Schicken Sie mir auch die Proben.</p>
+                <p>Die <persName key="P.0000195" ref="P.0000195">Mütter</persName> von Fräulein <persName key="P.0000187" ref="http://d-nb.info/gnd/118778927">Laurencin</persName> ist <date when="1913-05-11">vorgestern</date> gestorben -</p>
+                <p>Sie bekommen bald meine <hi rend="line-through">büch</hi> <term type="literaryWork" key="W.0000177" ref="http://d-nb.info/gnd/4316260-5">poesien</term>. und die übersetzung de<hi rend="line-through">s</hi>r <hi rend="line-through">cubismus</hi> <term type="book" key="W.0000173" source="http://gallica.bnf.fr/ark:/12148/btv1b52508734s" ref="http://d-nb.info/gnd/4552880-9">
+                    <foreign xml:lang="fr">peintres cubistes</foreign>
+                </term>.</p>
+                <closer>
+                    <salute>Schreiben Sie bald, und ich sende ihnen meine Bruderschaftliche Küsse –</salute> <signed>
+                        <hi rend="underline">
+                            <persName key="P.0000186" ref="http://d-nb.info/gnd/118503634">Guillaume Apollinaire</persName>
+                        </hi>
+                    </signed>
+                </closer>
+                <postscript>
+                    <p>Schicken Sie mir anecdoten über Sie dass ich konnte eine <foreign xml:lang="fr">
+                            <hi rend="underline">Vie anedotique</hi>
+                        </foreign>
+                        <note>Unter dem Pseudonym Montade schrieb Apollinaire seit April 1911 in der Zeitschrift <ref target="http://gallica.bnf.fr/ark:/12148/cb34427363f/date">„Mercure de France“</ref> regelmäßig die Kolumne „La Vie anecdotique“. Vgl. Rehage, Philipp [Hrsg.]: Correspondance Guillaume Apollinaire – Herwarth Walden (Der Sturm) 1913–1915. Caen 2007, S. 58.</note> uber Sie Schreiben.</p>
+                </postscript>
+            </div>
+        </body>
+    </text>
+</TEI>

@@ -1,0 +1,2269 @@
+<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?><?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+  <teiHeader>
+    <fileDesc>
+      <titleStmt>
+        <title>Register referenzierter Entitäten mit aufgelösten Normdaten</title>
+        <editor>Marjam Mahmoodzada<email>marjam.mahmoodzada@adwmainz.de</email> </editor>
+      </titleStmt>
+      <publicationStmt>
+        <publisher>
+          <ref target="marjam.mahmoodzada@adwmainz.de">Marjam Mahmoodzada</ref>
+        </publisher>
+        <idno type="file">referenzen.xml</idno>
+        <date when="2017-12-25+01:00"/>
+        <availability>
+          <licence target="https://creativecommons.org/licenses/by/4.0/"> This file is licensed
+            under the terms of the Creative-Commons-License CC BY 4.0 </licence>
+        </availability>
+      </publicationStmt>
+      <sourceDesc>
+        <p>Enthält alle in den Briefen referenzierten Entitäten mit aufgelösten Normdaten bzw.
+          Textstellen bei internen Referenzen</p>
+      </sourceDesc>
+    </fileDesc>
+  </teiHeader>
+  <text>
+    <body>
+      <div>
+        <listPerson>
+          <person source="http://d-nb.info/gnd/119262177" xml:id="P.0000032">
+            <persName type="pref">Alma, Peter</persName>
+          </person>
+          <person source="http://d-nb.info/gnd/118503634" xml:id="P.0000186">
+            <persName type="pref">Apollinaire, Guillaume</persName>
+          </person>
+          <person source="http://d-nb.info/gnd/118649949" n="AAR" xml:id="P.0000117">
+            <persName type="pref">Archipenko, Alexander</persName>
+          </person>
+          <person source="http://d-nb.info/gnd/2097840-6" xml:id="P.0000059">
+            <persName type="pref">Arnold, Ernst (Galerie)</persName>
+          </person>
+          <person xml:id="P.0000103">
+            <persName type="pref">Assendelft, Hendricus van</persName>
+          </person>
+          <person xml:id="P.0000104">
+            <persName type="pref">Audretsch, Herman Eduard d’</persName>
+          </person>
+          <person xml:id="P.0000083">
+            <persName type="pref">August (Stramm?)</persName>
+          </person>
+          <person xml:id="P.0000141">
+            <persName type="pref">Bankier von Marie Tak van Poortvliet</persName>
+          </person>
+          <person source="http://d-nb.info/gnd/123805767" xml:id="P.0000179">
+            <persName type="pref">Bauer, Marius</persName>
+          </person>
+          <person source="http://d-nb.info/gnd/13236056X" xml:id="P.0000063">
+            <persName type="pref">Bechteev, Vladimir G.</persName>
+          </person>
+          <person xml:id="P.0000072">
+            <persName type="pref">Beckerath, Luise von</persName>
+          </person>
+          <person source="http://d-nb.info/gnd/141343133" xml:id="P.0000014">
+            <persName type="pref">Beffie, Willem Wolff</persName>
+          </person>
+          <person source="http://d-nb.info/gnd/119191164" n="ABE" xml:id="P.0000021">
+            <persName type="pref">Behne, Adolf</persName>
+          </person>
+          <person xml:id="P.0000060">
+            <persName type="pref">Beneé</persName>
+          </person>
+          <person source="http://d-nb.info/gnd/116120894" xml:id="P.0000070">
+            <persName type="pref">Benkard, Ernst</persName>
+          </person>
+          <person source="http://d-nb.info/gnd/118509640" xml:id="P.0000151">
+            <persName type="pref">Berlage, Hendrik Petrus</persName>
+          </person>
+          <person source="http://d-nb.info/gnd/142220078" xml:id="P.0000171">
+            <persName type="pref">Bieling, Herman Frederik</persName>
+          </person>
+          <person source="http://d-nb.info/gnd/118663119" xml:id="P.0000109">
+            <persName type="pref">Biermann, Georg</persName>
+          </person>
+          <person xml:id="P.0000112">
+            <persName type="pref">Blaesing (dt. Gesandtschaft in Den Haag)</persName>
+          </person>
+          <person source="http://d-nb.info/gnd/11620589X" xml:id="P.0000108">
+            <persName type="pref">Blümner, Rudolf</persName>
+          </person>
+          <person source="http://d-nb.info/gnd/118512188" n="UBO" xml:id="P.0000118">
+            <persName type="pref">Boccioni, Umberto</persName>
+          </person>
+          <person xml:id="P.0000069">
+            <persName type="pref">Bock</persName>
+          </person>
+          <person source="http://d-nb.info/gnd/119102277" xml:id="P.0000110">
+            <persName type="pref">Brass, Hans</persName>
+          </person>
+          <person source="http://d-nb.info/gnd/121668053" xml:id="P.0000043">
+            <persName type="pref">Bremmer, Henk</persName>
+          </person>
+          <person source="http://d-nb.info/gnd/118673998" xml:id="P.0000044">
+            <persName type="pref">Breuer, Robert</persName>
+          </person>
+          <person xml:id="P.0000055">
+            <persName type="pref">Bruder (von Francisca van Leer)</persName>
+          </person>
+          <person xml:id="P.0000090">
+            <persName type="pref">Bruggen Cate, J.D. ten</persName>
+          </person>
+          <person xml:id="P.0000136">
+            <persName type="pref">Bülow, von</persName>
+          </person>
+          <person xml:id="P.0000017">
+            <persName type="pref">Bürgermeister (von Domburg/Zeeland um 1914)</persName>
+          </person>
+          <person source="http://d-nb.info/gnd/101835825" xml:id="P.0000185">
+            <persName type="pref">Byvanck, Willem G. C.</persName>
+          </person>
+          <person xml:id="P.0000067">
+            <persName type="pref">C. Gebh.</persName>
+          </person>
+          <person source="http://d-nb.info/gnd/118518674" xml:id="P.0000062">
+            <persName type="pref">Campendonk, Heinrich</persName>
+          </person>
+          <person xml:id="P.0000018">
+            <persName type="pref">Capitän Christus</persName>
+          </person>
+          <person source="http://d-nb.info/gnd/118870645" xml:id="P.0000058">
+            <persName type="pref">Cassirer, Paul</persName>
+          </person>
+          <person source="http://d-nb.info/gnd/118667653" xml:id="P.0000189">
+            <persName type="pref">Cendrars, Blaise</persName>
+          </person>
+          <person source="http://d-nb.info/gnd/118519980" n="MCH" xml:id="P.0000015">
+            <persName type="pref">Chagall, Marc</persName>
+          </person>
+          <person source="http://d-nb.info/gnd/118524208" xml:id="P.0000200">
+            <persName type="pref">Chirico, Giorgio de</persName>
+          </person>
+          <person source="http://d-nb.info/gnd/118520873" xml:id="P.0000115">
+            <persName type="pref">Citroen, Paul Roelof</persName>
+          </person>
+          <person source="http://d-nb.info/gnd/123242231" xml:id="P.0000116">
+            <persName type="pref">Cohn-Wiener, Ernst</persName>
+          </person>
+          <person source="http://d-nb.info/gnd/136469264" xml:id="P.0000162">
+            <persName type="pref">Collette, Joan</persName>
+          </person>
+          <person xml:id="P.0000153">
+            <persName type="pref">Colnot, Arnout Jacobus Gustaaf</persName>
+          </person>
+          <person source="http://resources.huygens.knaw.nl/bwn1880-2000/lemmata/bwn2/coster" xml:id="P.0000132">
+            <persName type="pref">Coster, Dirk</persName>
+          </person>
+          <person source="http://d-nb.info/gnd/116012374" xml:id="P.0000088">
+            <persName type="pref">Daffner, Hugo</persName>
+          </person>
+          <person source="http://d-nb.info/gnd/118524461" xml:id="P.0000092">
+            <persName type="pref">Delacroix, Eugène</persName>
+          </person>
+          <person source="http://d-nb.info/gnd/118524496" n="RDE" xml:id="P.0000123">
+            <persName type="pref">Delaunay, Robert</persName>
+          </person>
+          <person source="http://d-nb.info/gnd/11852450X" xml:id="P.0000194">
+            <persName type="pref">Delaunay Terk, Sonia</persName>
+          </person>
+          <person source="http://d-nb.info/gnd/118526405" xml:id="P.0000024">
+            <persName type="pref">Doesburg, Theo van</persName>
+          </person>
+          <person source="http://d-nb.info/gnd/118638858" xml:id="P.0000150">
+            <persName type="pref">Dongen, Kees van</persName>
+          </person>
+          <person source="https://rkd.nl/explore/artists/126139" xml:id="P.0000163">
+            <persName type="pref">Duursma, Djurre</persName>
+          </person>
+          <person source="http://d-nb.info/gnd/118528610" xml:id="P.0000120">
+            <persName type="pref">Ebert, Friedrich</persName>
+          </person>
+          <person source="http://d-nb.info/gnd/118688189" xml:id="P.0000176">
+            <persName type="pref">Ehmcke, F. H.</persName>
+          </person>
+          <person source="http://d-nb.info/gnd/118529587" xml:id="P.0000122">
+            <persName type="pref">Einstein, Carl</persName>
+          </person>
+          <person xml:id="P.0000145">
+            <persName type="pref">Elsa (evtl. Hausangestellte von Herwarth und Nell
+              Walden)</persName>
+          </person>
+          <person source="http://d-nb.info/gnd/11895797X" xml:id="P.0000148">
+            <persName type="pref">Emma, Königin der Niederlande</persName>
+          </person>
+          <person source="http://d-nb.info/gnd/118530712" xml:id="P.0000066">
+            <persName type="pref">Erbslöh, Adolf</persName>
+          </person>
+          <person source="http://d-nb.info/gnd/119071312" xml:id="P.0000177">
+            <persName type="pref">Erdmann-Macke, Elisabeth</persName>
+          </person>
+          <person xml:id="P.0000019">
+            <persName type="pref">Famia</persName>
+          </person>
+          <person xml:id="P.0000056">
+            <persName type="pref">Feige</persName>
+          </person>
+          <person xml:id="P.0000080">
+            <persName type="pref">Feldmann</persName>
+            <persName type="fn">F.</persName>
+          </person>
+          <person source="http://d-nb.info/gnd/118969161" xml:id="P.0000033">
+            <persName type="pref">Filla, Emil</persName>
+          </person>
+          <person source="http://d-nb.info/gnd/121931005" xml:id="P.0000040">
+            <persName type="pref">Gestel, Leo</persName>
+          </person>
+          <person source="http://d-nb.info/gnd/117543705" xml:id="P.0000035">
+            <persName type="pref">Gevers, Willem</persName>
+          </person>
+          <person source="https://rkd.nl/explore/artists/32008" xml:id="P.0000165">
+            <persName type="pref">Gits, Bernard Toon</persName>
+          </person>
+          <person source="http://d-nb.info/gnd/118695363" xml:id="P.0000188">
+            <persName type="pref">Gleizes, Albert</persName>
+          </person>
+          <person source="http://d-nb.info/gnd/5120121-5" xml:id="P.0000068">
+            <persName type="pref">Goldschmidt</persName>
+          </person>
+          <person source="http://d-nb.info/gnd/1055475877" xml:id="P.0000181">
+            <persName type="pref">Gratama, G. D.</persName>
+          </person>
+          <person source="http://d-nb.info/gnd/118722778" xml:id="P.0000182">
+            <persName type="pref">El Greco</persName>
+          </person>
+          <person source="http://d-nb.info/gnd/118542907" xml:id="P.0000183">
+            <persName type="pref">Grünewald, Matthias</persName>
+          </person>
+          <person source="http://d-nb.info/gnd/118907689" xml:id="P.0000081">
+            <persName type="pref">Hartley, Marsden</persName>
+          </person>
+          <person source="https://rkd.nl/explore/artists/36582" xml:id="P.0000166">
+            <persName type="pref">Havermans, Jan</persName>
+          </person>
+          <person source="http://d-nb.info/gnd/118547488" xml:id="P.0000078">
+            <persName type="pref">Heckel, Erich</persName>
+          </person>
+          <person source="http://d-nb.info/gnd/132815273" xml:id="P.0000006">
+            <persName type="pref">Heemskerck van Beest, Eduard Jacob van</persName>
+          </person>
+          <person source="http://d-nb.info/gnd/11854764X" n="JVH" xml:id="P.0000004">
+            <persName type="pref">Heemskerck van Beest, Jacoba van</persName>
+            <persName type="fn">Jacoba van Heemskerck</persName>
+          </person>
+          <person source="http://d-nb.info/gnd/11939877X" xml:id="P.0000100">
+            <persName type="pref">Heinersdorff, Gottfried</persName>
+          </person>
+          <person source="http://d-nb.info/gnd/118859986" xml:id="P.0000149">
+            <persName type="pref">Heinrich, Prinzgemahl, Niederlande</persName>
+          </person>
+          <person source="http://d-nb.info/gnd/118709909" xml:id="P.0000142">
+            <persName type="pref">Heinroth, Oskar</persName>
+          </person>
+          <person source="http://d-nb.info/gnd/119552930" xml:id="P.0000197">
+            <persName type="pref">Hervieu, Paul</persName>
+          </person>
+          <person xml:id="P.0000027">
+            <persName type="pref">Hess, Leopold</persName>
+          </person>
+          <person source="http://www.wikidata.org/entity/Q14856573" xml:id="P.0000037">
+            <persName type="pref">Heurn, van</persName>
+          </person>
+          <person source="http://d-nb.info/gnd/14179044X" xml:id="P.0000172">
+            <persName type="pref">Hoff, Robert van’t</persName>
+          </person>
+          <person source="http://d-nb.info/gnd/118553216" xml:id="P.0000196">
+            <persName type="pref">Holz, Arno</persName>
+          </person>
+          <person xml:id="P.0000022">
+            <persName type="pref">Hüber, Roelofssen</persName>
+          </person>
+          <person source="http://d-nb.info/gnd/117037508" xml:id="P.0000102">
+            <persName type="pref">Hübner, Friedrich Markus</persName>
+          </person>
+          <person source="http://d-nb.info/gnd/117539767" xml:id="P.0000135">
+            <persName type="pref">Humboldt-Dachroeden, Hans Paul von</persName>
+          </person>
+          <person source="https://rkd.nl/explore/artists/40835" xml:id="P.0000154">
+            <persName type="pref">Huysmans, Franciscus Johannes</persName>
+          </person>
+          <person xml:id="P.0000098">
+            <persName type="pref">Iturrino González, Francisco Nicolás</persName>
+          </person>
+          <person source="http://d-nb.info/gnd/127466118" xml:id="P.0000051">
+            <persName type="pref">Janssen, Miek</persName>
+          </person>
+          <person source="http://d-nb.info/gnd/118557157" xml:id="P.0000064">
+            <persName type="pref">Jawlensky, Alexej von</persName>
+          </person>
+          <person source="http://d-nb.info/gnd/124031072" xml:id="P.0000143">
+            <persName type="pref">Jessurun de Mesquita, Samuel</persName>
+          </person>
+          <person source="http://d-nb.info/gnd/118714708" xml:id="P.0000030">
+            <persName type="pref">Kahnweiler, Daniel-Henry</persName>
+          </person>
+          <person source="http://d-nb.info/gnd/118559737" n="WKA" xml:id="P.0000009">
+            <persName type="pref">Kandinsky, Wassily</persName>
+          </person>
+          <person n="HKA" xml:id="P.0000094">
+            <persName type="pref">Kauffmann, Harald</persName>
+          </person>
+          <person source="http://d-nb.info/gnd/1077780265" xml:id="P.0000012">
+            <persName type="pref">Kickert, Conrad</persName>
+          </person>
+          <person source="http://d-nb.info/gnd/118562827" n="PKL" xml:id="P.0000076">
+            <persName type="pref">Klee, Paul</persName>
+          </person>
+          <person xml:id="P.0000099">
+            <persName type="pref">Klugen</persName>
+          </person>
+          <person source="http://d-nb.info/gnd/116257911" n="AKN" xml:id="P.0000146">
+            <persName type="pref">Knoblauch, Adolf</persName>
+          </person>
+          <person source="http://d-nb.info/gnd/121452735" xml:id="P.0000073">
+            <persName type="pref">Koehler, Bernhard</persName>
+          </person>
+          <person source="http://d-nb.info/gnd/118564722" n="OKO" xml:id="P.0000046">
+            <persName type="pref">Kokoschka, Oskar</persName>
+          </person>
+          <person source="http://d-nb.info/gnd/136238378" xml:id="P.0000152">
+            <persName type="pref">Konijnenburg, Willem van</persName>
+          </person>
+          <person source="http://d-nb.info/gnd/119256630" xml:id="P.0000170">
+            <persName type="pref">Kramer, Piet</persName>
+          </person>
+          <person source="http://d-nb.info/gnd/119254522" xml:id="P.0000169">
+            <persName type="pref">Krop, Hildo</persName>
+          </person>
+          <person source="http://d-nb.info/gnd/118567365" xml:id="P.0000079">
+            <persName type="pref">Kubin, Alfred</persName>
+          </person>
+          <person source="http://d-nb.info/gnd/121798240" xml:id="P.0000134">
+            <persName type="pref">Kubín, Otakar</persName>
+          </person>
+          <person source="http://d-nb.info/gnd/118778153" xml:id="P.0000054">
+            <persName type="pref">Kühlmann, Richard von</persName>
+          </person>
+          <person source="http://viaf.org/viaf/317290941" xml:id="P.0000105">
+            <persName type="pref">Kuik, Laurens van</persName>
+          </person>
+          <person xml:id="P.0000133">
+            <persName type="pref">Laforèt (Mitarbeiter der Buchhandlung van Hoogstraten, Noordeinde,
+              Den Haag)</persName>
+          </person>
+          <person xml:id="P.0000050">
+            <persName type="pref">Lapidoth, F.</persName>
+          </person>
+          <person source="http://d-nb.info/gnd/118778927" xml:id="P.0000187">
+            <persName type="pref">Laurencin, Marie</persName>
+          </person>
+          <person source="http://d-nb.info/gnd/119224496" xml:id="P.0000161">
+            <persName type="pref">Leck, Bart van der</persName>
+          </person>
+          <person source="http://d-nb.info/gnd/128866748" xml:id="P.0000010">
+            <persName type="pref">Le Fauconnier, Henri</persName>
+          </person>
+          <person source="http://d-nb.info/gnd/122927486" xml:id="P.0000036">
+            <persName type="pref">Leer, Francisca van</persName>
+          </person>
+          <person source="http://d-nb.info/gnd/118570994" xml:id="P.0000191">
+            <persName type="pref">Léger, Fernand</persName>
+          </person>
+          <person xml:id="P.0000131">
+            <persName type="pref">Legrand</persName>
+          </person>
+          <person source="http://d-nb.info/gnd/118571516" xml:id="P.0000042">
+            <persName type="pref">Lenbach, Franz von</persName>
+          </person>
+          <person source="http://d-nb.info/gnd/118572695" n="MLI" xml:id="P.0000126">
+            <persName type="pref">Liebermann, Max</persName>
+          </person>
+          <person source="http://d-nb.info/gnd/11857275X" xml:id="P.0000121">
+            <persName type="pref">Liebknecht, Karl</persName>
+          </person>
+          <person source="http://d-nb.info/gnd/119218208" xml:id="P.0000029">
+            <persName type="pref">Lotz, Ernst Wilhelm</persName>
+          </person>
+          <person source="http://d-nb.info/gnd/118575864" n="AMA" xml:id="P.0000025">
+            <persName type="pref">Macke, August</persName>
+          </person>
+          <person source="http://d-nb.info/gnd/118575872" xml:id="P.0000075">
+            <persName type="pref">Macke, Helmuth</persName>
+          </person>
+          <person n="MMA" xml:id="P.0000093">
+                <persName type="pref">Malpricht, Max</persName>
+            </person>
+            <person source="http://d-nb.info/gnd/11857745X" n="FMA" xml:id="P.0000003">
+            <persName type="pref">Marc, Franz</persName>
+            <persName type="fn">Franz Marc</persName>
+          </person>
+          <person source="http://d-nb.info/gnd/119352435" xml:id="P.0000082">
+            <persName type="pref">Marc, Maria</persName>
+          </person>
+          <person source="http://d-nb.info/gnd/116880988" xml:id="P.0000140">
+            <persName type="pref">Mendelssohn, Robert von</persName>
+          </person>
+          <person xml:id="P.0000113">
+            <persName type="pref">Mentjes van Hoorn (aus Groningen)</persName>
+          </person>
+          <person source="http://d-nb.info/gnd/119104091" xml:id="P.0000047">
+            <persName type="pref">Mesdag, Hendrik Willem</persName>
+          </person>
+          <person source="http://d-nb.info/gnd/118893092" xml:id="P.0000190">
+            <persName type="pref">Metzinger, Jean</persName>
+          </person>
+          <person source="http://d-nb.info/gnd/118583247" xml:id="P.0000077">
+            <persName type="pref">Moilliet, Louis</persName>
+          </person>
+          <person source="http://d-nb.info/gnd/118583417" n="AMO" xml:id="P.0000085">
+            <persName type="pref">Mombert, Alfred</persName>
+          </person>
+          <person source="http://d-nb.info/gnd/118583441" xml:id="P.0000031">
+            <persName type="pref">Mondrian, Piet</persName>
+          </person>
+          <person xml:id="P.0000089">
+            <persName type="pref">Mälinger</persName>
+          </person>
+          <person source="http://d-nb.info/gnd/118585525" n="GMU" xml:id="P.0000138">
+            <persName type="pref">Münter, Gabriele</persName>
+          </person>
+          <person xml:id="P.0000095">
+            <persName type="pref">Munckel, Gertrud</persName>
+          </person>
+          <person xml:id="P.0000195">
+            <persName type="pref">Mutter (von Marie Laurencin)</persName>
+          </person>
+          <person source="http://d-nb.info/gnd/120828871" xml:id="P.0000087">
+            <persName type="pref">Niestlé, Jean-Bloé</persName>
+          </person>
+          <person source="http://d-nb.info/gnd/117022632" xml:id="P.0000086">
+            <persName type="pref">Nissen, Benedikt Momme</persName>
+          </person>
+          <person source="https://viaf.org/viaf/96598586" xml:id="P.0000193">
+            <persName type="pref">Ortiz de Zarate, Manuel</persName>
+          </person>
+          <person source="http://d-nb.info/gnd/117159271" xml:id="P.0000084">
+            <persName type="pref">Ostini, Fritz von</persName>
+          </person>
+          <person source="http://d-nb.info/gnd/118738860" xml:id="P.0000174">
+            <persName type="pref">Oud, Jacobus J. P.</persName>
+          </person>
+          <person source="http://d-nb.info/gnd/118812645" xml:id="P.0000061">
+            <persName type="pref">Pfemfert, Franz</persName>
+          </person>
+          <person source="http://d-nb.info/gnd/118594184" xml:id="P.0000199">
+            <persName type="pref">Picabia, Francis</persName>
+          </person>
+          <person source="http://d-nb.info/gnd/118594206" xml:id="P.0000049">
+            <persName type="pref">Picasso, Pablo</persName>
+          </person>
+          <person xml:id="P.0000201">
+            <persName type="pref">Pinsky, Chammay</persName>
+          </person>
+          <person source="http://d-nb.info/gnd/118988751" xml:id="P.0000180">
+            <persName type="pref">Plasschaert, Albert August</persName>
+          </person>
+          <person xml:id="P.0000139">
+            <persName type="pref">Pyle-Waller, Mieta</persName>
+          </person>
+          <person xml:id="P.0000173">
+            <persName type="pref">Querido, A.</persName>
+          </person>
+          <person source="https://rkd.nl/explore/artists/65412" xml:id="P.0000168">
+            <persName type="pref">Raedecker, John</persName>
+          </person>
+          <person source="http://d-nb.info/gnd/177140682" xml:id="P.0000192">
+            <persName type="pref">Reeves, Harrison</persName>
+          </person>
+          <person source="http://d-nb.info/gnd/143669230" xml:id="P.0000057">
+            <persName type="pref">Reiche, Richart</persName>
+          </person>
+          <person source="http://d-nb.info/gnd/11859964X" xml:id="P.0000091">
+            <persName type="pref">Rembrandt, Harmensz van Rijn</persName>
+          </person>
+          <person xml:id="P.0000106">
+            <persName type="pref">Resink, Emilie Johanna</persName>
+          </person>
+          <person xml:id="P.0000026">
+            <persName type="pref">Ridderhof</persName>
+            <persName type="fn">emballeur</persName>
+          </person>
+          <person source="http://d-nb.info/gnd/1056411538" xml:id="P.0000045">
+            <persName type="pref">Saalborn, Louis</persName>
+          </person>
+          <person xml:id="P.0000023">
+            <persName type="pref">Santen, van</persName>
+          </person>
+          <person source="http://d-nb.info/gnd/117103594" xml:id="P.0000007">
+            <persName type="pref">Schames, Ludwig</persName>
+          </person>
+          <person source="http://d-nb.info/gnd/118606816" n="PSC" xml:id="P.0000013">
+            <persName type="pref">Scheerbart, Paul</persName>
+          </person>
+          <person source="http://d-nb.info/gnd/124503063" xml:id="P.0000039">
+            <persName type="pref">Schelfhout, Lodewijk</persName>
+          </person>
+          <person source="http://d-nb.info/gnd/1047412616" xml:id="P.0000101">
+            <persName type="pref">Schlichtkrull, Wilhelm</persName>
+          </person>
+          <person source="http://d-nb.info/gnd/117281522" xml:id="P.0000111">
+            <persName type="pref">Schulze, Hanns</persName>
+          </person>
+          <person xml:id="P.0000038">
+            <persName type="pref">Schuurman, Max</persName>
+          </person>
+          <person xml:id="P.0000005">
+            <persName type="pref">Schwester (von Jacoba van Heemskerck van Beest)</persName>
+          </person>
+          <person source="http://d-nb.info/gnd/118612751" xml:id="P.0000184">
+            <persName type="pref">Seghers, Hercules</persName>
+          </person>
+          <person xml:id="P.0000129">
+            <persName type="pref">Sekretär des Collegiums in Delft (Januar 1916)</persName>
+          </person>
+          <person xml:id="P.0000128">
+            <persName type="pref">Sekretär des Haagse Kunstkring (Dezember 1921)</persName>
+          </person>
+          <person xml:id="P.0000137">
+            <persName type="pref">Sekretär von Richard von Kühlmann (dt. Gesandtschaft in Den Haag,
+              um 1920)</persName>
+          </person>
+          <person xml:id="P.0000127">
+            <persName type="pref">Sekretärin von Herwarth Walden (um 1921)</persName>
+          </person>
+          <person source="http://d-nb.info/gnd/118796798" n="GSE" xml:id="P.0000119">
+            <persName type="pref">Severini, Gino</persName>
+          </person>
+          <person source="http://d-nb.info/gnd/118613723" xml:id="P.0000074">
+            <persName type="pref">Shakespeare, William</persName>
+          </person>
+          <person source="http://d-nb.info/gnd/118748475" xml:id="P.0000016">
+            <persName type="pref">Sluyters, Jan</persName>
+          </person>
+          <person source="http://d-nb.info/gnd/118618830" n="AST" xml:id="P.0000041">
+            <persName type="pref">Stramm, August</persName>
+          </person>
+          <person source="http://d-nb.info/gnd/118619853" xml:id="P.0000198">
+            <persName type="pref">Sudermann, Hermann</persName>
+          </person>
+          <person source="http://viaf.org/viaf/287860832" xml:id="P.0000034">
+            <persName type="pref">Tak van Poortvliet, Johannes Pieter Roetert</persName>
+          </person>
+          <person source="http://d-nb.info/gnd/136128289" xml:id="P.0000008">
+            <persName type="pref">Tak van Poortvliet, Marie</persName>
+          </person>
+          <person source="http://d-nb.info/gnd/118621041" xml:id="P.0000020">
+            <persName type="pref">Taut, Bruno</persName>
+          </person>
+          <person source="http://d-nb.info/gnd/117299421" xml:id="P.0000071">
+            <persName type="pref">Thannhauser, Heinrich</persName>
+          </person>
+          <person xml:id="P.0000097">
+            <persName type="pref">Tholey, Charles de</persName>
+          </person>
+          <person source="http://d-nb.info/gnd/11862332X" xml:id="P.0000157">
+            <persName type="pref">Toorop, Charley</persName>
+          </person>
+          <person source="http://d-nb.info/gnd/119295954" xml:id="P.0000011">
+            <persName type="pref">Toorop, Jan</persName>
+          </person>
+          <person source="http://d-nb.info/gnd/128547111" xml:id="P.0000175">
+            <persName type="pref">Trendelenburg, Ernst</persName>
+          </person>
+          <person source="http://d-nb.info/gnd/174282923" xml:id="P.0000114">
+            <persName type="pref">Uytvanck, Valentijn Edgar van</persName>
+          </person>
+          <person source="http://www.wikidata.org/entity/Q23719055" xml:id="P.0000048">
+            <persName type="pref">Versluys, W.</persName>
+          </person>
+          <person xml:id="P.0000096">
+            <persName type="pref">Viau, Daniel</persName>
+          </person>
+          <person xml:id="P.0000130">
+            <persName type="pref">Vries Broeckman, de (Prof., vermutl. in Delft)</persName>
+          </person>
+          <person xml:id="P.0000028">
+            <persName type="pref">Wagner, R.</persName>
+          </person>
+          <person source="http://d-nb.info/gnd/118770950" n="HWA" xml:id="P.0000001">
+            <persName type="pref">Walden, Herwarth</persName>
+          </person>
+          <person source="http://d-nb.info/gnd/118891456" n="NWA" xml:id="P.0000002">
+            <persName type="pref">Walden, Nell</persName>
+          </person>
+          <person source="http://d-nb.info/gnd/117178446" xml:id="P.0000125">
+            <persName type="pref">Wedderkop, Hermann von</persName>
+          </person>
+          <person source="http://d-nb.info/gnd/118631365" n="MVW" xml:id="P.0000065">
+            <persName type="pref">Werefkin, Marianne von</persName>
+          </person>
+          <person xml:id="P.0000159">
+            <persName type="pref">Weynand, Jaap</persName>
+          </person>
+          <person xml:id="P.0000053">
+            <persName type="pref">Wichert</persName>
+          </person>
+          <person source="http://d-nb.info/gnd/121893421" xml:id="P.0000164">
+            <persName type="pref">Wichmann, Erich</persName>
+          </person>
+          <person source="http://d-nb.info/gnd/128951710" xml:id="P.0000052">
+            <persName type="pref">Wiegand, Charmion von</persName>
+          </person>
+          <person source="http://d-nb.info/gnd/129032638" xml:id="P.0000155">
+            <persName type="pref">Wiegman, Matthieu</persName>
+          </person>
+          <person source="http://d-nb.info/gnd/128963255" xml:id="P.0000156">
+            <persName type="pref">Wiegman, Piet</persName>
+          </person>
+          <person xml:id="P.0000160">
+            <persName type="pref">Wierdsma, Wiggers</persName>
+          </person>
+          <person source="http://d-nb.info/gnd/129075094" xml:id="P.0000158">
+            <persName type="pref">Wijngaerdt, Piet van</persName>
+          </person>
+          <person source="http://d-nb.info/gnd/118771892" xml:id="P.0000147">
+            <persName type="pref">Wilhelmina, Königin der Niederlande</persName>
+          </person>
+          <person source="http://d-nb.info/gnd/184199166" xml:id="P.0000167">
+            <persName type="pref">Winter, Janus de</persName>
+          </person>
+          <person source="http://d-nb.info/gnd/129223166" xml:id="P.0000124">
+            <persName type="pref">Zeylmans van Emmichoven, Frederik Willem</persName>
+          </person>
+          <person source="http://d-nb.info/gnd/118636863" xml:id="P.0000144">
+            <persName type="pref">Zille, Heinrich</persName>
+          </person>
+        </listPerson>
+        <listPlace>
+          <place source="http://sws.geonames.org/357994" xml:id="O.0000044">
+            <placeName type="pref">Aegypten</placeName>
+            <location>
+              <geo>27 30</geo>
+            </location>
+          </place>
+          <place source="http://sws.geonames.org/6252001" xml:id="O.0000082">
+            <placeName type="pref">Amerika</placeName>
+            <location>
+              <geo>39.76 -98.5</geo>
+            </location>
+          </place>
+          <place source="http://sws.geonames.org/2759794" xml:id="O.0000009">
+            <placeName type="pref">Amsterdam</placeName>
+            <location>
+              <geo>52.37403 4.88969</geo>
+            </location>
+          </place>
+          <place source="http://sws.geonames.org/2803138" xml:id="O.0000017">
+            <placeName type="pref">Antwerpen</placeName>
+            <location>
+              <geo>51.21989 4.40346</geo>
+            </location>
+          </place>
+          <place source="http://sws.geonames.org/6458843" xml:id="O.0000029">
+            <placeName type="pref">Arlesheim</placeName>
+            <location>
+              <geo>47.51668 7.58733</geo>
+            </location>
+          </place>
+          <place source="http://sws.geonames.org/2759633" xml:id="O.0000034">
+            <placeName type="pref">Assen</placeName>
+            <location>
+              <geo>52.99667 6.5625</geo>
+            </location>
+          </place>
+          <place source="http://sws.geonames.org/6557468" xml:id="O.0000080">
+            <placeName type="pref">Bad Bentheim</placeName>
+            <location>
+              <geo>52.3046 7.1506</geo>
+            </location>
+          </place>
+          <place source="http://sws.geonames.org/685608" xml:id="O.0000041">
+            <placeName type="pref">Balkan</placeName>
+            <location>
+              <geo>44 23</geo>
+            </location>
+          </place>
+          <place source="http://sws.geonames.org/2952539" xml:id="O.0000045">
+            <placeName type="pref">Barmen</placeName>
+            <location>
+              <geo>51.27737 7.19802</geo>
+            </location>
+          </place>
+          <place source="http://sws.geonames.org/2661602" xml:id="O.0000030">
+            <placeName type="pref">Basel</placeName>
+            <location>
+              <geo>47.5669 7.61519</geo>
+            </location>
+          </place>
+          <place source="http://sws.geonames.org/3033791" xml:id="O.0000060">
+            <placeName type="pref">Belfort</placeName>
+            <location>
+              <geo>47.63333 6.86667</geo>
+            </location>
+          </place>
+          <place source="http://sws.geonames.org/2802361" xml:id="O.0000021">
+            <placeName type="pref">Belgien</placeName>
+            <location>
+              <geo>50.75 4.5</geo>
+            </location>
+          </place>
+          <place source="http://sws.geonames.org/2951104" xml:id="O.0000056">
+            <placeName type="pref">Benediktbeuern</placeName>
+            <location>
+              <geo>47.70624 11.41522</geo>
+            </location>
+          </place>
+          <place source="http://sws.geonames.org/2950159" xml:id="O.0000002">
+            <placeName type="pref">Berlin</placeName>
+            <location>
+              <geo>52.5 13.41667</geo>
+            </location>
+          </place>
+          <place source="http://sws.geonames.org/2661552" xml:id="O.0000070">
+            <placeName type="pref">Bern</placeName>
+            <location>
+              <geo>46.94809 7.44744</geo>
+            </location>
+          </place>
+          <place source="http://sws.geonames.org/2949324" xml:id="O.0000054">
+            <placeName type="pref">Bichl</placeName>
+            <location>
+              <geo>47.7201 11.41231</geo>
+            </location>
+          </place>
+          <place source="http://sws.geonames.org/2945358" xml:id="O.0000046">
+            <placeName type="pref">Brandenburg an der Havel</placeName>
+            <location>
+              <geo>52.41667 12.55</geo>
+            </location>
+          </place>
+          <place source="http://sws.geonames.org/2944387" xml:id="O.0000049">
+            <placeName type="pref">Bremen</placeName>
+            <location>
+              <geo>53.08333 8.83333</geo>
+            </location>
+          </place>
+          <place source="http://sws.geonames.org/3030293" xml:id="O.0000006">
+            <placeName type="pref">Bretagne</placeName>
+            <location>
+              <geo>48.16667 -2.83333</geo>
+            </location>
+          </place>
+          <place source="http://sws.geonames.org/2800866" xml:id="O.0000083">
+            <placeName>Brussels</placeName>
+            <placeName type="pref">Brüssel</placeName>
+            <location>
+              <geo>50.85045 4.34878</geo>
+            </location>
+          </place>
+          <place source="http://sws.geonames.org/3054643" xml:id="O.0000040">
+            <placeName type="pref">Budapest</placeName>
+            <location>
+              <geo>47.49801 19.03991</geo>
+            </location>
+          </place>
+          <place source="http://sws.geonames.org/2758064" xml:id="O.0000067">
+            <placeName type="pref">Bussum</placeName>
+            <location>
+              <geo>52.27333 5.16111</geo>
+            </location>
+          </place>
+          <place source="http://sws.geonames.org/6455399" xml:id="O.0000089">
+            <placeName type="pref">Courbevoie (Seine)</placeName>
+            <location>
+              <geo>48.89722 2.25222</geo>
+            </location>
+          </place>
+          <place source="http://sws.geonames.org/2757345" xml:id="O.0000078">
+            <placeName type="pref">Delft</placeName>
+            <location>
+              <geo>52.00667 4.35556</geo>
+            </location>
+          </place>
+          <place source="http://sws.geonames.org/2747373" xml:id="O.0000001">
+            <placeName type="pref">Den Haag</placeName>
+            <location>
+              <geo>52.07667 4.29861</geo>
+            </location>
+          </place>
+          <place source="http://sws.geonames.org/2921044" xml:id="O.0000014">
+            <placeName type="pref">Deutschland</placeName>
+            <location>
+              <geo>51.5 10.5</geo>
+            </location>
+          </place>
+          <place source="http://sws.geonames.org/2756746" xml:id="O.0000004">
+            <placeName type="pref">Domburg</placeName>
+            <location>
+              <geo>51.56333 3.49583</geo>
+            </location>
+          </place>
+          <place source="http://sws.geonames.org/2660989" xml:id="O.0000077">
+            <placeName type="pref">Dornach</placeName>
+            <location>
+              <geo>47.48038 7.61644</geo>
+            </location>
+          </place>
+          <place source="http://sws.geonames.org/2935022" xml:id="O.0000032">
+            <placeName type="pref">Dresden</placeName>
+            <location>
+              <geo>51.05089 13.73832</geo>
+            </location>
+          </place>
+          <place source="http://sws.geonames.org/6269131" xml:id="O.0000023">
+            <placeName type="pref">England</placeName>
+            <location>
+              <geo>52.16045 -0.70312</geo>
+            </location>
+          </place>
+          <place source="http://sws.geonames.org/3020152" xml:id="O.0000061">
+            <placeName type="pref">Ensisheim</placeName>
+            <location>
+              <geo>47.86695 7.35212</geo>
+            </location>
+          </place>
+          <place source="http://sws.geonames.org/2928810" xml:id="O.0000076">
+            <placeName type="pref">Essen</placeName>
+            <location>
+              <geo>51.45657 7.01228</geo>
+            </location>
+          </place>
+          <place source="http://sws.geonames.org/2925533" xml:id="O.0000018">
+            <placeName type="pref">Frankfurt am Main</placeName>
+            <location>
+              <geo>50.11552 8.68417</geo>
+            </location>
+          </place>
+          <place source="http://sws.geonames.org/3017382" xml:id="O.0000016">
+            <placeName type="pref">Frankreich</placeName>
+            <location>
+              <geo>46 2</geo>
+            </location>
+          </place>
+          <place source="http://sws.geonames.org/562153" xml:id="O.0000035">
+            <placeName type="pref">Galizien</placeName>
+            <location>
+              <geo>49.5 23</geo>
+            </location>
+          </place>
+          <place source="http://sws.geonames.org/2660646" xml:id="O.0000008">
+            <placeName type="pref">Genf</placeName>
+            <location>
+              <geo>46.20222 6.14569</geo>
+            </location>
+          </place>
+          <place source="http://sws.geonames.org/2920512" xml:id="O.0000050">
+            <placeName type="pref">Giessen</placeName>
+            <location>
+              <geo>50.58727 8.67554</geo>
+            </location>
+          </place>
+          <place source="http://sws.geonames.org/390903" xml:id="O.0000028">
+            <placeName type="pref">Griechenland</placeName>
+            <location>
+              <geo>39 22</geo>
+            </location>
+          </place>
+          <place source="http://sws.geonames.org/2755251" xml:id="O.0000073">
+            <placeName type="pref">Groningen</placeName>
+            <location>
+              <geo>53.21917 6.56667</geo>
+            </location>
+          </place>
+          <place source="http://sws.geonames.org/2755420" xml:id="O.0000084">
+            <placeName type="pref">Gouda</placeName>
+            <location>
+              <geo>52.01667 4.70833</geo>
+            </location>
+          </place>
+          <place source="http://sws.geonames.org/2755002" xml:id="O.0000087">
+            <placeName type="pref">Haarlem</placeName>
+            <location>
+              <geo>52.38074 4.644</geo>
+            </location>
+          </place>
+          <place source="http://sws.geonames.org/2912621" xml:id="O.0000047">
+            <placeName type="pref">Hagen</placeName>
+            <location>
+              <geo>51.36081 7.47168</geo>
+            </location>
+          </place>
+          <place source="http://sws.geonames.org/2911297" xml:id="O.0000007">
+            <placeName type="pref">Hamburg</placeName>
+            <location>
+              <geo>53.58333 10</geo>
+            </location>
+          </place>
+          <place source="http://sws.geonames.org/3013886" xml:id="O.0000062">
+            <placeName type="pref">Hartmannsweilerkopf</placeName>
+            <location>
+              <geo>47.86083 7.1612</geo>
+            </location>
+          </place>
+          <place source="http://sws.geonames.org/745044" xml:id="O.0000043">
+            <placeName type="pref">Istanbul</placeName>
+            <location>
+              <geo>41.01384 28.94966</geo>
+            </location>
+          </place>
+          <place source="http://sws.geonames.org/3175395" xml:id="O.0000025">
+            <placeName type="pref">Italien</placeName>
+            <location>
+              <geo>42.83333 12.83333</geo>
+            </location>
+          </place>
+          <place source="http://sws.geonames.org/2892794" xml:id="O.0000069">
+            <placeName type="pref">Karlsruhe</placeName>
+            <location>
+              <geo>49.00937 8.40444</geo>
+            </location>
+          </place>
+          <place source="http://sws.geonames.org/598316" xml:id="O.0000039">
+            <placeName type="pref">Kaunas</placeName>
+            <location>
+              <geo>54.90272 23.90961</geo>
+            </location>
+          </place>
+          <place source="http://sws.geonames.org/2886242" xml:id="O.0000075">
+            <placeName type="pref">Köln</placeName>
+            <location>
+              <geo>50.93333 6.95</geo>
+            </location>
+          </place>
+          <place source="http://sws.geonames.org/2618425" xml:id="O.0000036">
+            <placeName type="pref">Kopenhagen</placeName>
+            <location>
+              <geo>55.67594 12.56553</geo>
+            </location>
+          </place>
+          <place source="http://sws.geonames.org/2879139" xml:id="O.0000074">
+            <placeName type="pref">Leipzig</placeName>
+            <location>
+              <geo>51.33962 12.37129</geo>
+            </location>
+          </place>
+          <place source="http://sws.geonames.org/2643743" xml:id="O.0000079">
+            <placeName type="pref">London</placeName>
+            <location>
+              <geo>51.50853 -0.12574</geo>
+            </location>
+          </place>
+          <place source="http://sws.geonames.org/765876" xml:id="O.0000038">
+            <placeName type="pref">Lublin</placeName>
+            <location>
+              <geo>51.25 22.56667</geo>
+            </location>
+          </place>
+          <place source="http://sws.geonames.org/2876187" xml:id="O.0000081">
+            <placeName type="pref">Löhne</placeName>
+            <location>
+              <geo>52.18848 8.6922</geo>
+            </location>
+          </place>
+          <place source="http://sws.geonames.org/2792482" xml:id="O.0000015">
+            <placeName type="pref">Löwen</placeName>
+            <location>
+              <geo>50.87959 4.70093</geo>
+            </location>
+          </place>
+          <place source="http://sws.geonames.org/2750896" xml:id="O.0000013">
+            <placeName type="pref">Middelburg</placeName>
+            <location>
+              <geo>51.5 3.61389</geo>
+            </location>
+          </place>
+          <place source="http://sws.geonames.org/2867714" xml:id="O.0000052">
+            <placeName type="pref">München</placeName>
+            <location>
+              <geo>48.13743 11.57549</geo>
+            </location>
+          </place>
+          <place source="http://sws.geonames.org/7163824" xml:id="O.0000090">
+            <placeName type="pref">New York</placeName>
+            <location>
+              <geo>40.66393 -73.93827</geo>
+            </location>
+          </place>
+          <place source="http://sws.geonames.org/2750405" xml:id="O.0000003">
+            <placeName type="pref">Niederlande</placeName>
+            <location>
+              <geo>52.25 5.75</geo>
+            </location>
+          </place>
+          <place source="http://sws.geonames.org/2960848" xml:id="O.0000019">
+            <placeName type="pref">Nordsee</placeName>
+            <location>
+              <geo>55.33333 3</geo>
+            </location>
+          </place>
+          <place source="http://sws.geonames.org/2857129" xml:id="O.0000042">
+            <placeName type="pref">Oranienburg</placeName>
+            <location>
+              <geo>52.75577 13.24197</geo>
+            </location>
+          </place>
+          <place source="http://sws.geonames.org/2988507" xml:id="O.0000010">
+            <placeName type="pref">Paris</placeName>
+            <location>
+              <geo>48.85341 2.3488</geo>
+            </location>
+          </place>
+          <place source="http://sws.geonames.org/798544" xml:id="O.0000022">
+            <placeName type="pref">Polen</placeName>
+            <location>
+              <geo>52 20</geo>
+            </location>
+          </place>
+          <place source="http://sws.geonames.org/2847349" xml:id="O.0000055">
+            <placeName type="pref">Ried</placeName>
+            <location>
+              <geo>47.69185 11.40638</geo>
+            </location>
+          </place>
+          <place source="http://sws.geonames.org/2747891" xml:id="O.0000011">
+            <placeName type="pref">Rotterdam</placeName>
+            <location>
+              <geo>51.9225 4.47917</geo>
+            </location>
+          </place>
+          <place source="http://sws.geonames.org/798549" xml:id="O.0000024">
+            <placeName type="pref">Rumänien</placeName>
+            <location>
+              <geo>46 25</geo>
+            </location>
+          </place>
+          <place source="http://sws.geonames.org/2017370" xml:id="O.0000020">
+            <placeName type="pref">Russlandölzes</placeName>
+            <location>
+              <geo>60 100</geo>
+            </location>
+          </place>
+          <place source="http://sws.geonames.org/2747599" xml:id="O.0000026">
+            <placeName type="pref">Scheveningen</placeName>
+            <location>
+              <geo>52.10461 4.27557</geo>
+            </location>
+          </place>
+          <place source="http://sws.geonames.org/2661886" xml:id="O.0000033">
+            <placeName type="pref">Schweden</placeName>
+            <location>
+              <geo>62 15</geo>
+            </location>
+          </place>
+          <place source="http://sws.geonames.org/2658434" xml:id="O.0000031">
+            <placeName type="pref">Schweiz</placeName>
+            <location>
+              <geo>47.00016 8.01427</geo>
+            </location>
+          </place>
+          <place source="http://sws.geonames.org/2744011" xml:id="O.0000005">
+            <placeName type="pref">Seeland (Provinz)</placeName>
+            <location>
+              <geo>51.41667 3.75</geo>
+            </location>
+          </place>
+          <place source="http://sws.geonames.org/2833866" xml:id="O.0000066">
+            <placeName type="pref">Seefeld (Bayern)</placeName>
+            <location>
+              <geo>48.03505 11.21395</geo>
+            </location>
+          </place>
+          <place source="http://sws.geonames.org/6290252" xml:id="O.0000086">
+            <placeName type="pref">Serbien</placeName>
+            <location>
+              <geo>44.81892 20.45998</geo>
+            </location>
+          </place>
+          <place source="http://sws.geonames.org/2831942" xml:id="O.0000048">
+            <placeName type="pref">Sindelsdorf</placeName>
+            <location>
+              <geo>47.72458 11.33295</geo>
+            </location>
+          </place>
+          <place source="http://sws.geonames.org/2673730" xml:id="O.0000037">
+            <placeName type="pref">Stockholm</placeName>
+            <location>
+              <geo>59.33258 18.0649</geo>
+            </location>
+          </place>
+          <place source="http://sws.geonames.org/2973783" xml:id="O.0000059">
+            <placeName type="pref">Straßburg</placeName>
+            <location>
+              <geo>48.58392 7.74553</geo>
+            </location>
+          </place>
+          <place source="http://sws.geonames.org/2825297" xml:id="O.0000068">
+            <placeName type="pref">Stuttgart</placeName>
+            <location>
+              <geo>48.78232 9.17702</geo>
+            </location>
+          </place>
+          <place source="http://sws.geonames.org/734077" xml:id="O.0000088">
+            <placeName type="pref">Thessaloniki</placeName>
+            <location>
+              <geo>40.64361 22.93086</geo>
+            </location>
+          </place>
+          <place source="http://sws.geonames.org/1850147" xml:id="O.0000051">
+            <placeName type="pref">Tokio</placeName>
+            <location>
+              <geo>35.6895 139.69171</geo>
+            </location>
+          </place>
+          <place source="http://sws.geonames.org/2464470" xml:id="O.0000057">
+            <placeName type="pref">Tunis</placeName>
+            <location>
+              <geo>36.81897 10.16579</geo>
+            </location>
+          </place>
+          <place source="http://sws.geonames.org/2745392" xml:id="O.0000012">
+            <placeName type="pref">Vlissingen</placeName>
+            <location>
+              <geo>51.4425 3.57361</geo>
+            </location>
+          </place>
+          <place source="http://sws.geonames.org/2745088" xml:id="O.0000072">
+            <placeName type="pref">Wageningen</placeName>
+            <location>
+              <geo>51.97 5.66667</geo>
+            </location>
+          </place>
+          <place source="http://sws.geonames.org/2812482" xml:id="O.0000085">
+            <placeName type="pref">Weimar</placeName>
+            <location>
+              <geo>50.9803 11.32903</geo>
+            </location>
+          </place>
+          <place source="http://sws.geonames.org/2808473" xml:id="O.0000058">
+            <placeName type="pref">Wilmersdorf</placeName>
+            <location>
+              <geo>52.48333 13.31667</geo>
+            </location>
+          </place>
+          <place source="http://sws.geonames.org/3081368" xml:id="O.0000053">
+            <placeName type="pref">Wrocław</placeName>
+            <location>
+              <geo>51.1 17.03333</geo>
+            </location>
+          </place>
+          <place source="http://sws.geonames.org/2657896" xml:id="O.0000071">
+            <placeName type="pref">Zürich</placeName>
+            <location>
+              <geo>47.36667 8.55</geo>
+            </location>
+          </place>
+          <place source="http://sws.geonames.org/2743477" xml:id="O.0000027">
+            <placeName type="pref">Zwolle</placeName>
+            <location>
+              <geo>52.5125 6.09444</geo>
+            </location>
+          </place>
+        </listPlace>
+        <list n="terms">
+          <item xml:id="W.0000141" n="artwork">
+            <name type="pref">Abbildungen von Holzschnitten</name>
+            <name>Abbildungen von meinen Holzschnitten</name>
+            <listRelation>
+              <relation type="http://erlangen-crm.org/current/" name="P14_carried_out_by" active="#P.0000004" passive="#W.0000141"/>
+            </listRelation>
+          </item>
+          <item xml:id="W.0000030" n="artwork">
+            <name type="pref">Aktbild</name>
+            <name>die Akte</name>
+            <listRelation>
+              <relation type="http://erlangen-crm.org/current/" name="P14_carried_out_by" active="#P.0000003" passive="#W.0000030"/>
+            </listRelation>
+          </item>
+          <item source="http://d-nb.info/gnd/4316260-5" xml:id="W.0000177" n="literaryWork">
+            <name type="pref">Apollinaire, Guillaume: Alcools. Paris 1913.</name>
+            <name>Alcools</name>
+            <name>poesien</name>
+            <listRelation>
+              <relation type="http://erlangen-crm.org/current/" name="P14_carried_out_by" active="#P.0000186" passive="#W.0000177"/>
+            </listRelation>
+          </item>
+          <item source="http://d-nb.info/gnd/4552880-9" xml:id="W.0000173" n="book">
+            <ref target="http://gallica.bnf.fr/ark:/12148/btv1b52508734s"/>
+            <name type="pref">Apollinaire, Guillaume: Les peintres cubistes. Paris 1913.</name>
+            <name>peintres cubistes</name>
+            <listRelation>
+              <relation type="http://erlangen-crm.org/current/" name="P14_carried_out_by" active="#P.0000186" passive="#W.0000173"/>
+            </listRelation>
+          </item>
+          <item source="http://d-nb.info/gnd/4565528-5" xml:id="W.0000172" n="literaryWork">
+            <ref target="http://gallica.bnf.fr/ark:/12148/bpt6k10494703"/>
+            <name type="pref">Apollinaire, Guillaume: L’hérésiarque et Cie. Paris 1910.</name>
+            <name>Hérésiarque et Cie</name>
+            <listRelation>
+              <relation type="http://erlangen-crm.org/current/" name="P14_carried_out_by" active="#P.0000186" passive="#W.0000172"/>
+            </listRelation>
+          </item>
+          <item xml:id="W.0000174" n="article">
+            <name type="pref">Apollinaire, Guillaume: Pariser Brief. (angekündigt)</name>
+            <name>Pariser Brief</name>
+            <name>pariser brief</name>
+            <listRelation>
+              <relation type="http://erlangen-crm.org/current/" name="P14_carried_out_by" active="#P.0000186" passive="#W.0000174"/>
+            </listRelation>
+          </item>
+          <item source="http://d-nb.info/578763435" xml:id="W.0000151" n="book">
+            <ref target="https://digi.ub.uni-heidelberg.de/diglit/archipenko1917"/>
+            <name type="pref">Archipenko, Alexander: Sturm Bilderbücher II. Alexander Archipenko.
+              Berlin, Der Sturm, 1917.</name>
+            <listRelation>
+              <relation type="http://erlangen-crm.org/current/" name="P14_carried_out_by" active="#P.0000117" passive="#W.0000151"/>
+            </listRelation>
+          </item>
+          <item xml:id="W.0000056" n="newspaper">
+            <name type="pref">Avondpost</name>
+          </item>
+          <item xml:id="W.0000025" n="artwork">
+            <name type="pref">Barbaren</name>
+            <listRelation>
+              <relation type="http://erlangen-crm.org/current/" name="P14_carried_out_by" active="#P.0000003" passive="#W.0000025"/>
+            </listRelation>
+          </item>
+          <item xml:id="W.0000163" n="article">
+            <name type="pref">Behne, Adolf: Ausstellungen. In: Freiheit, Nr. 534/B 239, 29. Oktober
+              1919, S. 3.</name>
+            <listRelation>
+              <relation type="http://erlangen-crm.org/current/" name="P14_carried_out_by" active="#P.0000021" passive="#W.0000163"/>
+            </listRelation>
+          </item>
+          <item xml:id="W.0000052" n="article">
+            <ref target="https://doi.org/10.11588/diglit.37113#0070"/>
+            <name type="pref">Behne, Adolf: Biologie und Kubismus. In: Der Sturm. Halbmonatsschrift
+              für Kultur und die Künste 11/12 (1915), S. 68-71.</name>
+            <listRelation>
+              <relation type="http://erlangen-crm.org/current/" name="P14_carried_out_by" active="#P.0000021" passive="#W.0000052"/>
+            </listRelation>
+          </item>
+          <item xml:id="W.0000051" n="article">
+            <name type="pref">Behne, Adolf: Der Krieg und die künstlerische Produktion. In: Umschau
+              19 (1915), S. 268-273.</name>
+            <listRelation>
+              <relation type="http://erlangen-crm.org/current/" name="P14_carried_out_by" active="#P.0000021" passive="#W.0000051"/>
+            </listRelation>
+          </item>
+          <item xml:id="W.0000050" n="article">
+            <ref target="https://doi.org/10.11588/diglit.33880#0117"/>
+            <name type="pref">Behne, Adolf: Deutsche Expressionisten. Vortrag zur Eröffnung der
+              neuen Sturm-Ausstellung. In: Der Sturm. Halbmonatsschrift für Kultur und die Künste
+              17/18 (1914), S. 114-115.</name>
+            <listRelation>
+              <relation type="http://erlangen-crm.org/current/" name="P14_carried_out_by" active="#P.0000021" passive="#W.0000050"/>
+            </listRelation>
+          </item>
+          <item source="http://d-nb.info/578835940" xml:id="W.0000066" n="book">
+            <ref target="https://doi.org/10.11588/diglit.27084"/>
+            <name type="pref">Behne, Adolf: Zur Neuen Kunst. Berlin 1915.</name>
+            <name>Buch</name>
+            <name>Sturm-Buch</name>
+            <listRelation>
+              <relation type="http://erlangen-crm.org/current/" name="P14_carried_out_by" active="#P.0000021" passive="#W.0000066"/>
+            </listRelation>
+          </item>
+          <item source="http://d-nb.info/gnd/4006406-2" xml:id="W.0000167" n="book">
+            <name type="pref">Bibel</name>
+          </item>
+          <item xml:id="W.0000088" n="book">
+            <name type="pref">Bibelausgabe</name>
+          </item>
+          <item xml:id="W.0000026" n="artwork">
+            <name type="pref">Bild</name>
+            <listRelation>
+              <relation type="http://erlangen-crm.org/current/" name="P14_carried_out_by" active="#P.0000004" passive="#W.0000026"/>
+            </listRelation>
+          </item>
+          <item xml:id="W.0000027" n="artwork">
+            <name type="pref">Bild</name>
+            <listRelation>
+              <relation type="http://erlangen-crm.org/current/" name="P14_carried_out_by" active="#P.0000004" passive="#W.0000027"/>
+            </listRelation>
+          </item>
+          <item xml:id="W.0000107" n="artwork">
+            <name type="pref">Bild 1</name>
+            <listRelation>
+              <relation type="http://erlangen-crm.org/current/" name="P14_carried_out_by" active="#P.0000004" passive="#W.0000107"/>
+            </listRelation>
+          </item>
+          <item xml:id="W.0000021" n="artwork">
+            <name>100</name>
+            <name type="pref">Bild 100</name>
+            <listRelation>
+              <relation type="http://erlangen-crm.org/current/" name="P14_carried_out_by" active="#P.0000003" passive="#W.0000021"/>
+            </listRelation>
+          </item>
+          <item xml:id="W.0000022" n="artwork">
+            <name>101</name>
+            <name type="pref">Bild 101</name>
+            <listRelation>
+              <relation type="http://erlangen-crm.org/current/" name="P14_carried_out_by" active="#P.0000003" passive="#W.0000022"/>
+            </listRelation>
+          </item>
+          <item xml:id="W.0000139" n="artwork">
+            <name>101.</name>
+            <name type="pref">Bild 101</name>
+            <listRelation>
+              <relation type="http://erlangen-crm.org/current/" name="P14_carried_out_by" active="#P.0000004" passive="#W.0000139"/>
+            </listRelation>
+          </item>
+          <item xml:id="W.0000023" n="artwork">
+            <name>102</name>
+            <name type="pref">Bild 102</name>
+            <listRelation>
+              <relation type="http://erlangen-crm.org/current/" name="P14_carried_out_by" active="#P.0000003" passive="#W.0000023"/>
+            </listRelation>
+          </item>
+          <item xml:id="W.0000159" n="artwork">
+            <name type="pref">Bild 106</name>
+            <listRelation>
+              <relation type="http://erlangen-crm.org/current/" name="P14_carried_out_by" active="#P.0000004" passive="#W.0000159"/>
+            </listRelation>
+          </item>
+          <item xml:id="W.0000158" n="artwork">
+            <name type="pref">Bild 109</name>
+            <listRelation>
+              <relation type="http://erlangen-crm.org/current/" name="P14_carried_out_by" active="#P.0000004" passive="#W.0000158"/>
+            </listRelation>
+          </item>
+          <item xml:id="W.0000015" n="artwork">
+            <name>11</name>
+            <name type="pref">Bild 11</name>
+            <listRelation>
+              <relation type="http://erlangen-crm.org/current/" name="P14_carried_out_by" active="#P.0000004" passive="#W.0000015"/>
+            </listRelation>
+          </item>
+          <item xml:id="W.0000016" n="artwork">
+            <name>12</name>
+            <name type="pref">Bild 12</name>
+            <listRelation>
+              <relation type="http://erlangen-crm.org/current/" name="P14_carried_out_by" active="#P.0000004" passive="#W.0000016"/>
+            </listRelation>
+          </item>
+          <item xml:id="W.0000017" n="artwork">
+            <name type="pref">Bild 14</name>
+            <name>Zeichnung 14.</name>
+            <name>14</name>
+            <name>Zeichnung no 14.</name>
+            <listRelation>
+              <relation type="http://erlangen-crm.org/current/" name="P14_carried_out_by" active="#P.0000004" passive="#W.0000017"/>
+            </listRelation>
+          </item>
+          <item xml:id="W.0000028" n="artwork">
+            <name type="pref">Bild 15</name>
+            <name>Gemälde no 15.</name>
+            <listRelation>
+              <relation type="http://erlangen-crm.org/current/" name="P14_carried_out_by" active="#P.0000004" passive="#W.0000028"/>
+            </listRelation>
+          </item>
+          <item xml:id="W.0000018" n="artwork">
+            <name>17</name>
+            <name type="pref">Bild 17</name>
+            <listRelation>
+              <relation type="http://erlangen-crm.org/current/" name="P14_carried_out_by" active="#P.0000004" passive="#W.0000018"/>
+            </listRelation>
+          </item>
+          <item xml:id="W.0000019" n="artwork">
+            <name>19</name>
+            <name type="pref">Bild 19</name>
+            <listRelation>
+              <relation type="http://erlangen-crm.org/current/" name="P14_carried_out_by" active="#P.0000004" passive="#W.0000019"/>
+            </listRelation>
+          </item>
+          <item xml:id="W.0000109" n="artwork">
+            <name type="pref">Bild 24</name>
+            <listRelation>
+              <relation type="http://erlangen-crm.org/current/" name="P14_carried_out_by" active="#P.0000004" passive="#W.0000109"/>
+            </listRelation>
+          </item>
+          <item xml:id="W.0000160" n="artwork">
+            <name type="pref">Bild 32</name>
+            <listRelation>
+              <relation type="http://erlangen-crm.org/current/" name="P14_carried_out_by" active="#P.0000004" passive="#W.0000160"/>
+            </listRelation>
+          </item>
+          <item xml:id="W.0000121" n="artwork">
+            <name>No. 65.</name>
+            <name type="pref">Bild 65</name>
+            <listRelation>
+              <relation type="http://erlangen-crm.org/current/" name="P14_carried_out_by" active="#P.0000004" passive="#W.0000121"/>
+            </listRelation>
+          </item>
+          <item xml:id="W.0000162" n="artwork">
+            <name>67.</name>
+            <name type="pref">Bild 67</name>
+            <listRelation>
+              <relation type="http://erlangen-crm.org/current/" name="P14_carried_out_by" active="#P.0000004" passive="#W.W.0000162"/>
+            </listRelation>
+          </item>
+          <item xml:id="W.0000122" n="artwork">
+            <name>68.</name>
+            <name type="pref">Bild 68</name>
+            <listRelation>
+              <relation type="http://erlangen-crm.org/current/" name="P14_carried_out_by" active="#P.0000004" passive="#W.0000122"/>
+            </listRelation>
+          </item>
+          <item xml:id="W.0000123" n="artwork">
+            <name>69.</name>
+            <name type="pref">Bild 69</name>
+            <listRelation>
+              <relation type="http://erlangen-crm.org/current/" name="P14_carried_out_by" active="#P.0000004" passive="#W.0000123"/>
+            </listRelation>
+          </item>
+          <item xml:id="W.0000124" n="artwork">
+            <name>71.</name>
+            <name type="pref">Bild 71</name>
+            <listRelation>
+              <relation type="http://erlangen-crm.org/current/" name="P14_carried_out_by" active="#P.0000004" passive="#W.0000124"/>
+            </listRelation>
+          </item>
+          <item xml:id="W.0000125" n="artwork">
+            <name>73.</name>
+            <name type="pref">Bild 73</name>
+            <listRelation>
+              <relation type="http://erlangen-crm.org/current/" name="P14_carried_out_by" active="#P.0000004" passive="#W.0000125"/>
+            </listRelation>
+          </item>
+          <item xml:id="W.0000126" n="artwork">
+            <name>74.</name>
+            <name type="pref">Bild 74</name>
+            <listRelation>
+              <relation type="http://erlangen-crm.org/current/" name="P14_carried_out_by" active="#P.0000004" passive="#W.0000126"/>
+            </listRelation>
+          </item>
+          <item xml:id="W.0000127" n="artwork">
+            <name>78.</name>
+            <name type="pref">Bild 78</name>
+            <listRelation>
+              <relation type="http://erlangen-crm.org/current/" name="P14_carried_out_by" active="#P.0000004" passive="#W.0000127"/>
+            </listRelation>
+          </item>
+          <item xml:id="W.0000013" n="artwork">
+            <name type="pref">Bild 8</name>
+            <name>Nr. 8</name>
+            <listRelation>
+              <relation type="http://erlangen-crm.org/current/" name="P14_carried_out_by" active="#P.0000004" passive="#W.0000013"/>
+            </listRelation>
+          </item>
+          <item xml:id="W.0000128" n="artwork">
+            <name>81.</name>
+            <name type="pref">Bild 81</name>
+            <listRelation>
+              <relation type="http://erlangen-crm.org/current/" name="P14_carried_out_by" active="#P.0000004" passive="#W.0000128"/>
+            </listRelation>
+          </item>
+          <item xml:id="W.0000129" n="artwork">
+            <name>82.</name>
+            <name type="pref">Bild 82</name>
+            <listRelation>
+              <relation type="http://erlangen-crm.org/current/" name="P14_carried_out_by" active="#P.0000004" passive="#W.0000129"/>
+            </listRelation>
+          </item>
+          <item xml:id="W.0000130" n="artwork">
+            <name>83.</name>
+            <name type="pref">Bild 83</name>
+            <listRelation>
+              <relation type="http://erlangen-crm.org/current/" name="P14_carried_out_by" active="#P.0000004" passive="#W.0000130"/>
+            </listRelation>
+          </item>
+          <item xml:id="W.0000131" n="artwork">
+            <name>85.</name>
+            <name type="pref">Bild 85</name>
+            <listRelation>
+              <relation type="http://erlangen-crm.org/current/" name="P14_carried_out_by" active="#P.0000004" passive="#W.0000131"/>
+            </listRelation>
+          </item>
+          <item xml:id="W.0000132" n="artwork">
+            <name>86.</name>
+            <name type="pref">Bild 86</name>
+            <listRelation>
+              <relation type="http://erlangen-crm.org/current/" name="P14_carried_out_by" active="#P.0000004" passive="#W.0000132"/>
+            </listRelation>
+          </item>
+          <item xml:id="W.0000133" n="artwork">
+            <name>89.</name>
+            <name type="pref">Bild 89</name>
+            <listRelation>
+              <relation type="http://erlangen-crm.org/current/" name="P14_carried_out_by" active="#P.0000004" passive="#W.0000133"/>
+            </listRelation>
+          </item>
+          <item xml:id="W.0000014" n="artwork">
+            <name>9</name>
+            <name type="pref">Bild 9</name>
+            <listRelation>
+              <relation type="http://erlangen-crm.org/current/" name="P14_carried_out_by" active="#P.0000004" passive="#W.0000014"/>
+            </listRelation>
+          </item>
+          <item xml:id="W.0000134" n="artwork">
+            <name>90.</name>
+            <name type="pref">Bild 90</name>
+            <listRelation>
+              <relation type="http://erlangen-crm.org/current/" name="P14_carried_out_by" active="#P.0000004" passive="#W.0000134"/>
+            </listRelation>
+          </item>
+          <item xml:id="W.0000135" n="artwork">
+            <name>94.</name>
+            <name type="pref">Bild 94</name>
+            <listRelation>
+              <relation type="http://erlangen-crm.org/current/" name="P14_carried_out_by" active="#P.0000004" passive="#W.0000135"/>
+            </listRelation>
+          </item>
+          <item xml:id="W.0000136" n="artwork">
+            <name>97.</name>
+            <name type="pref">Bild 97</name>
+            <listRelation>
+              <relation type="http://erlangen-crm.org/current/" name="P14_carried_out_by" active="#P.0000004" passive="#W.0000136"/>
+            </listRelation>
+          </item>
+          <item xml:id="W.0000137" n="artwork">
+            <name>98.</name>
+            <name type="pref">Bild 98</name>
+            <listRelation>
+              <relation type="http://erlangen-crm.org/current/" name="P14_carried_out_by" active="#P.0000004" passive="#W.0000137"/>
+            </listRelation>
+          </item>
+          <item xml:id="W.0000020" n="artwork">
+            <name>98</name>
+            <name type="pref">Bild 98</name>
+            <listRelation>
+              <relation type="http://erlangen-crm.org/current/" name="P14_carried_out_by" active="#P.0000003" passive="#W.0000020"/>
+            </listRelation>
+          </item>
+          <item xml:id="W.0000138" n="artwork">
+            <name>99.</name>
+            <name type="pref">Bild 99</name>
+            <listRelation>
+              <relation type="http://erlangen-crm.org/current/" name="P14_carried_out_by" active="#P.0000004" passive="#W.0000138"/>
+            </listRelation>
+          </item>
+          <item xml:id="W.0000024" n="artwork">
+            <name>99</name>
+            <name type="pref">Bild 99</name>
+            <listRelation>
+              <relation type="http://erlangen-crm.org/current/" name="P14_carried_out_by" active="#P.0000003" passive="#W.0000024"/>
+            </listRelation>
+          </item>
+          <item xml:id="W.0000029" n="artwork">
+            <name type="pref">Bleau noire Drucke</name>
+          </item>
+          <item source="http://d-nb.info/gnd/4384142-9" xml:id="W.0000072" n="newspaper">
+            <name type="pref">Börsencourier</name>
+          </item>
+          <item xml:id="W.0000152" n="book">
+            <ref target="https://archive.org/details/marcchagall00berl/page/n2"/>
+            <name>Sturm Bilderbücher I.</name>
+            <name type="pref">Chagall, Marc: Sturm Bilderbücher I. Marc Chagall. Berlin, Der Sturm,
+              1914.</name>
+            <listRelation>
+              <relation type="http://erlangen-crm.org/current/" name="P14_carried_out_by" active="#P.0000117" passive="#W.0000152"/>
+            </listRelation>
+          </item>
+          <item xml:id="W.0000117" n="article">
+            <ref target="https://doi.org/10.11588/diglit.21394.231"/>
+            <name>Besprechung</name>
+            <name type="pref">Cohn-Wiener, Ernst: Ausstellungsbesprechung zum Sturm. In: Der
+              Cicerone 1919, XI, S. 707.</name>
+            <listRelation>
+              <relation type="http://erlangen-crm.org/current/" name="P14_carried_out_by" active="#P.0000116" passive="#W.0000117"/>
+            </listRelation>
+          </item>
+          <item xml:id="W.0000175" n="lecture">
+            <name type="pref">Conférences</name>
+            <listRelation>
+              <relation type="http://erlangen-crm.org/current/" name="P14_carried_out_by" active="#P.0000186" passive="#W.0000175"/>
+            </listRelation>
+          </item>
+          <item source="http://www.wikidata.org/entity/Q2366892" xml:id="W.0000079" n="newspaper">
+            <name type="pref">Dagblad van Zuid-Holland en 's Gravenhage</name>
+          </item>
+          <item xml:id="W.0000057" n="newspaper">
+            <name type="pref">De Nieuwe Courant</name>
+            <name>Nieuwe Courant</name>
+            <name>Nieuve Courant</name>
+          </item>
+          <item xml:id="W.0000058" n="newspaper">
+            <name type="pref">De Toekomst</name>
+          </item>
+          <item xml:id="W.0000059" n="newspaper">
+            <name type="pref">De Toestand</name>
+          </item>
+          <item xml:id="W.0000012" n="artwork">
+            <name type="pref">Delacroix-Drucke</name>
+            <listRelation>
+              <relation type="http://erlangen-crm.org/current/" name="P14_carried_out_by" active="#P.0000092" passive="#W.0000012"/>
+            </listRelation>
+          </item>
+          <item source="http://d-nb.info/gnd/4714366-6" xml:id="W.0000073" n="newspaper">
+            <name type="pref">Der Telegraaf</name>
+          </item>
+          <item source="http://d-nb.info/gnd/4127687-5" xml:id="W.0000070" n="journal">
+            <name type="pref">Die Aktion</name>
+          </item>
+          <item source="http://d-nb.info/1100192158" xml:id="W.0000064" n="newspaper">
+            <name type="pref">Die Hilfe</name>
+          </item>
+          <item xml:id="W.0000055" n="newspaper">
+            <name type="pref">Die Umschau</name>
+          </item>
+          <item source="http://d-nb.info/gnd/4181967-6" xml:id="W.0000102" n="journal">
+            <ref target="http://library.fes.de/sozmon/"/>
+            <name type="pref">Die sozialistischen Monatshefte</name>
+          </item>
+          <item xml:id="W.0000031" n="artwork">
+            <name type="pref">Eber</name>
+            <listRelation>
+              <relation type="http://erlangen-crm.org/current/" name="P14_carried_out_by" active="#P.0000003" passive="#W.0000031"/>
+            </listRelation>
+          </item>
+          <item source="http://d-nb.info/gnd/4737924-8" xml:id="W.0000120" n="book">
+            <name type="pref">Einstein, Carl: Negerplastik. Leipzig 1915.</name>
+            <listRelation>
+              <relation type="http://erlangen-crm.org/current/" name="P14_carried_out_by" active="#P.0000122" passive="#W.0000120"/>
+            </listRelation>
+          </item>
+          <item xml:id="W.0000092" n="artwork">
+            <name type="pref">Entwurf Glasfenster 10</name>
+            <listRelation>
+              <relation type="http://erlangen-crm.org/current/" name="P14_carried_out_by" active="#P.0000004" passive="#W.0000092"/>
+            </listRelation>
+          </item>
+          <item xml:id="W.0000093" n="artwork">
+            <name type="pref">Entwurf Glasfenster 17</name>
+            <listRelation>
+              <relation type="http://erlangen-crm.org/current/" name="P14_carried_out_by" active="#P.0000004" passive="#W.0000093"/>
+            </listRelation>
+          </item>
+          <item xml:id="W.0000094" n="artwork">
+            <name type="pref">Entwurf Glasfenster 19</name>
+            <listRelation>
+              <relation type="http://erlangen-crm.org/current/" name="P14_carried_out_by" active="#P.0000004" passive="#W.0000094"/>
+            </listRelation>
+          </item>
+          <item xml:id="W.0000095" n="artwork">
+            <name type="pref">Entwurf Glasfenster 20</name>
+            <listRelation>
+              <relation type="http://erlangen-crm.org/current/" name="P14_carried_out_by" active="#P.0000004" passive="#W.0000095"/>
+            </listRelation>
+          </item>
+          <item xml:id="W.0000096" n="artwork">
+            <name type="pref">Entwurf Glasfenster 21</name>
+            <listRelation>
+              <relation type="http://erlangen-crm.org/current/" name="P14_carried_out_by" active="#P.0000004" passive="#W.0000096"/>
+            </listRelation>
+          </item>
+          <item xml:id="W.0000097" n="artwork">
+            <name type="pref">Entwurf Glasfenster 22</name>
+            <listRelation>
+              <relation type="http://erlangen-crm.org/current/" name="P14_carried_out_by" active="#P.0000004" passive="#W.0000097"/>
+            </listRelation>
+          </item>
+          <item xml:id="W.0000098" n="artwork">
+            <name type="pref">Entwurf Glasfenster 23</name>
+            <listRelation>
+              <relation type="http://erlangen-crm.org/current/" name="P14_carried_out_by" active="#P.0000004" passive="#W.0000098"/>
+            </listRelation>
+          </item>
+          <item xml:id="W.0000099" n="artwork">
+            <name type="pref">Entwurf Glasfenster 24</name>
+            <listRelation>
+              <relation type="http://erlangen-crm.org/current/" name="P14_carried_out_by" active="#P.0000004" passive="#W.0000099"/>
+            </listRelation>
+          </item>
+          <item xml:id="W.0000100" n="artwork">
+            <name type="pref">Entwurf Glasfenster 25</name>
+            <listRelation>
+              <relation type="http://erlangen-crm.org/current/" name="P14_carried_out_by" active="#P.0000004" passive="#W.0000100"/>
+            </listRelation>
+          </item>
+          <item xml:id="W.0000101" n="artwork">
+            <name type="pref">Entwurf Glasfenster 26</name>
+            <listRelation>
+              <relation type="http://erlangen-crm.org/current/" name="P14_carried_out_by" active="#P.0000004" passive="#W.0000101"/>
+            </listRelation>
+          </item>
+          <item xml:id="W.0000032" n="artwork">
+            <name type="pref">Eselfries</name>
+            <listRelation>
+              <relation type="http://erlangen-crm.org/current/" name="P14_carried_out_by" active="#P.0000003" passive="#W.0000032"/>
+            </listRelation>
+          </item>
+          <item xml:id="W.0000060" n="newspaper">
+            <name type="pref">Flämische Zeitung</name>
+          </item>
+          <item source="http://d-nb.info/gnd/4129625-4" xml:id="W.0000071" n="newspaper">
+            <name type="pref">Frankfurter Zeitung</name>
+            <name>Frankf. Z.</name>
+          </item>
+          <item source="http://d-nb.info/012046744" xml:id="W.0000150" n="journal">
+            <name type="pref">Freiheit</name>
+          </item>
+          <item source="http://www.wikidata.org/entity/Q1218349" xml:id="W.0000074" n="artwork">
+            <name>g. Kuh</name>
+            <name type="pref">Gelbe Kuh</name>
+            <listRelation>
+              <relation type="http://erlangen-crm.org/current/" name="P14_carried_out_by" active="#P.0000003" passive="#W.0000074"/>
+            </listRelation>
+          </item>
+          <item xml:id="W.0000046" n="artwork">
+            <name type="pref">Genesis</name>
+            <listRelation>
+              <relation type="http://erlangen-crm.org/current/" name="P14_carried_out_by" active="#P.0000003" passive="#W.0000046"/>
+            </listRelation>
+          </item>
+          <item source="http://www.wikidata.org/entity/Q2190868" xml:id="W.0000078" n="newspaper">
+            <name type="pref">Haagsche Courant</name>
+          </item>
+          <item source="http://www.wikidata.org/entity/Q13649926" xml:id="W.0000075" n="newspaper">
+            <name type="pref">Haagsche Post</name>
+          </item>
+          <item source="http://www.wikidata.org/entity/Q837919" xml:id="W.0000081" n="newspaper">
+            <name type="pref">Handelsblad</name>
+          </item>
+          <item xml:id="W.0000033" n="artwork">
+            <name type="pref">Hasenangstbild</name>
+            <listRelation>
+              <relation type="http://erlangen-crm.org/current/" name="P14_carried_out_by" active="#P.0000003" passive="#W.0000033"/>
+            </listRelation>
+          </item>
+          <item source="http://d-nb.info/361483708" xml:id="W.0000112" n="book">
+            <name type="pref">Heinersdorff, Gottfried: Die Glasmalerei, ihre Technik und ihre
+              Geschichte. Berlin: 1914.</name>
+            <listRelation>
+              <relation type="http://erlangen-crm.org/current/" name="P14_carried_out_by" active="#P.0000100" passive="#W.0000112"/>
+            </listRelation>
+          </item>
+          <item xml:id="W.0000061" n="newspaper">
+            <name type="pref">Hofstad</name>
+          </item>
+          <item xml:id="W.0000004" n="artwork">
+            <ref target="https://doi.org/10.11588/diglit.37113#0057"/>
+            <name type="pref">Holzschnitt</name>
+            <listRelation>
+              <relation type="http://erlangen-crm.org/current/" name="P14_carried_out_by" active="#P.0000004" passive="#W.0000004"/>
+            </listRelation>
+          </item>
+          <item xml:id="W.0000005" n="artwork">
+            <ref target="https://doi.org/10.11588/diglit.37113#0075"/>
+            <name type="pref">Holzschnitt</name>
+            <listRelation>
+              <relation type="http://erlangen-crm.org/current/" name="P14_carried_out_by" active="#P.0000004" passive="#W.0000005"/>
+            </listRelation>
+          </item>
+          <item xml:id="W.0000006" n="artwork">
+            <ref target="https://doi.org/10.11588/diglit.33880#0127"/>
+            <name type="pref">Holzschnitt</name>
+            <listRelation>
+              <relation type="http://erlangen-crm.org/current/" name="P14_carried_out_by" active="#P.0000004" passive="#W.0000006"/>
+            </listRelation>
+          </item>
+          <item xml:id="W.0000007" n="artwork">
+            <ref target="https://doi.org/10.11588/diglit.37113#0090"/>
+            <name type="pref">Holzschnitt</name>
+            <listRelation>
+              <relation type="http://erlangen-crm.org/current/" name="P14_carried_out_by" active="#P.0000004" passive="#W.0000007"/>
+            </listRelation>
+          </item>
+          <item xml:id="W.0000108" n="artwork">
+            <ref target="https://doi.org/10.11588/diglit.37115#0015"/>
+            <name type="pref">Holzschnitt</name>
+            <listRelation>
+              <relation type="http://erlangen-crm.org/current/" name="P14_carried_out_by" active="#P.0000004" passive="#W.0000108"/>
+            </listRelation>
+          </item>
+          <item xml:id="W.0000145" n="artwork">
+            <name type="pref">Holzschnitt</name>
+            <listRelation>
+              <relation type="http://erlangen-crm.org/current/" name="P14_carried_out_by" active="#P.0000004" passive="#W.0000145"/>
+            </listRelation>
+          </item>
+          <item xml:id="W.0000146" n="artwork">
+            <name type="pref">Holzschnitt</name>
+            <listRelation>
+              <relation type="http://erlangen-crm.org/current/" name="P14_carried_out_by" active="#P.0000004" passive="#W.0000146"/>
+            </listRelation>
+          </item>
+          <item xml:id="W.0000104" n="artwork">
+            <name type="pref">Holzschnitt No. 1</name>
+            <listRelation>
+              <relation type="http://erlangen-crm.org/current/" name="P14_carried_out_by" active="#P.0000004" passive="#W.0000104"/>
+            </listRelation>
+          </item>
+          <item xml:id="W.0000105" n="artwork">
+            <name type="pref">Holzschnitt No. 2</name>
+            <listRelation>
+              <relation type="http://erlangen-crm.org/current/" name="P14_carried_out_by" active="#P.0000004" passive="#W.0000105"/>
+            </listRelation>
+          </item>
+          <item xml:id="W.0000106" n="artwork">
+            <name type="pref">Holzschnitt No. 3</name>
+            <listRelation>
+              <relation type="http://erlangen-crm.org/current/" name="P14_carried_out_by" active="#P.0000004" passive="#W.0000106"/>
+            </listRelation>
+          </item>
+          <item xml:id="W.0000114" n="artwork">
+            <name>6. Holzschnitte</name>
+            <name type="pref">Holzschnitte</name>
+            <listRelation>
+              <relation type="http://erlangen-crm.org/current/" name="P14_carried_out_by" active="#P.0000004" passive="#W.0000114"/>
+            </listRelation>
+          </item>
+          <item xml:id="W.0000008" n="artwork">
+            <ref target="https://doi.org/10.11588/diglit.33880#0151"/>
+            <name type="pref">Holzstock</name>
+            <name>Holzstöck</name>
+            <listRelation>
+              <relation type="http://erlangen-crm.org/current/" name="P14_carried_out_by" active="#P.0000004" passive="#W.0000008"/>
+            </listRelation>
+          </item>
+          <item xml:id="W.0000034" n="artwork">
+            <name type="pref">Holzträger</name>
+            <listRelation>
+              <relation type="http://erlangen-crm.org/current/" name="P14_carried_out_by" active="#P.0000003" passive="#W.0000034"/>
+            </listRelation>
+          </item>
+          <item xml:id="W.0000011" n="artwork">
+            <name type="pref">Häringe</name>
+            <listRelation>
+              <relation type="http://erlangen-crm.org/current/" name="P14_carried_out_by" active="#P.0000033" passive="#W.0000011"/>
+            </listRelation>
+          </item>
+          <item xml:id="W.0000176" n="artwork">
+            <name type="pref">Hölzstücke</name>
+            <name>Hölzes engraviert</name>
+            <listRelation>
+              <relation type="http://erlangen-crm.org/current/" name="P14_carried_out_by" active="#P.0000187" passive="#W.0000176"/>
+            </listRelation>
+          </item>
+          <item source="http://d-nb.info/580245071" xml:id="W.0000090" n="book">
+            <name type="pref">Hübner, Friedrich Markus: Die neue Malerei in Holland. Leipzig
+              1921.</name>
+            <listRelation>
+              <relation type="http://erlangen-crm.org/current/" name="P14_carried_out_by" active="#P.0000102" passive="#W.0000090"/>
+            </listRelation>
+          </item>
+          <item source="http://d-nb.info/gnd/4133052-3" xml:id="W.0000170" n="artwork">
+            <ref target="https://commons.wikimedia.org/wiki/File:Grunewald_Isenheim.jpg"/>
+            <name type="pref">Isenheimer Altar</name>
+            <listRelation>
+              <relation type="http://erlangen-crm.org/current/" name="P14_carried_out_by" active="#P.0000183" passive="#W.0000170"/>
+            </listRelation>
+          </item>
+          <item source="http://anet.be/record/abraham/opacbnc/c:bnc:2494/N" xml:id="W.0000063" n="newspaper">
+            <name type="pref">Journal des Réfugiés</name>
+          </item>
+          <item source="http://d-nb.info/361026382" xml:id="W.0000155" n="book">
+            <name type="pref">Kandinsky, Wassily: Kandinsky 1901-1913. Berlin, Der Sturm,
+              1913.</name>
+            <listRelation>
+              <relation type="http://erlangen-crm.org/current/" name="P14_carried_out_by" active="#P.0000009" passive="#W.0000155"/>
+            </listRelation>
+          </item>
+          <item xml:id="W.0000036" n="artwork">
+            <name type="pref">Katzen</name>
+            <listRelation>
+              <relation type="http://erlangen-crm.org/current/" name="P14_carried_out_by" active="#P.0000003" passive="#W.0000036"/>
+            </listRelation>
+          </item>
+          <item xml:id="W.0000001" n="artwork">
+            <ref target="https://doi.org/10.11588/diglit.33880#0005"/>
+            <name type="pref">Katzenblatt</name>
+            <listRelation>
+              <relation type="http://erlangen-crm.org/current/" name="P14_carried_out_by" active="#P.0000003" passive="#W.0000001"/>
+            </listRelation>
+          </item>
+          <item xml:id="W.0000038" n="artwork">
+            <name type="pref">Kl. Kompos. I-III</name>
+            <listRelation>
+              <relation type="http://erlangen-crm.org/current/" name="P14_carried_out_by" active="#P.0000003" passive="#W.0000038"/>
+            </listRelation>
+          </item>
+          <item source="http://d-nb.info/58038408X" xml:id="W.0000153" n="book">
+            <ref target="https://archive.org/details/paulk00klee/page/n4"/>
+            <name type="pref">Klee, Paul: Sturm Bilderbücher III. Paul Klee. Berlin, Der Sturm,
+              1918.</name>
+            <listRelation>
+              <relation type="http://erlangen-crm.org/current/" name="P14_carried_out_by" active="#P.0000076" passive="#W.0000153"/>
+            </listRelation>
+          </item>
+          <item xml:id="W.0000037" n="artwork">
+            <name>Komp. I</name>
+            <name type="pref">Komposition I</name>
+            <listRelation>
+              <relation type="http://erlangen-crm.org/current/" name="P14_carried_out_by" active="#P.0000003" passive="#W.0000037"/>
+            </listRelation>
+          </item>
+          <item xml:id="W.0000009" n="artwork">
+            <name>" II</name>
+            <name type="pref">Komposition II</name>
+            <listRelation>
+              <relation type="http://erlangen-crm.org/current/" name="P14_carried_out_by" active="#P.0000003" passive="#W.0000009"/>
+            </listRelation>
+          </item>
+          <item xml:id="W.0000010" n="artwork">
+            <name>" III</name>
+            <name type="pref">Komposition III</name>
+            <listRelation>
+              <relation type="http://erlangen-crm.org/current/" name="P14_carried_out_by" active="#P.0000003" passive="#W.0000010"/>
+            </listRelation>
+          </item>
+          <item source="http://d-nb.info/gnd/4166017-1" xml:id="W.0000169" n="journal">
+            <name type="pref">Kunst und Künstler</name>
+          </item>
+          <item xml:id="W.0000035" n="artwork">
+            <name type="pref">Kämpfende Kühe</name>
+            <name>Kuhbildes</name>
+            <listRelation>
+              <relation type="http://erlangen-crm.org/current/" name="P14_carried_out_by" active="#P.0000003" passive="#W.0000035"/>
+            </listRelation>
+          </item>
+          <item source="http://www.wikidata.org/entity/Q3204265" xml:id="W.0000171" n="newspaper">
+            <ref target="http://gallica.bnf.fr/ark:/12148/bpt6k786676j"/>
+            <name type="pref">L'Intransigeant</name>
+            <name>Intransigeant</name>
+          </item>
+          <item source="http://d-nb.info/gnd/4818282-5" xml:id="W.0000178" n="journal">
+            <ref target="http://gallica.bnf.fr/ark:/12148/cb32870652c/date"/>
+            <name type="pref">Les Soirées de Paris</name>
+            <name>Soirées</name>
+          </item>
+          <item xml:id="W.0000111" n="artwork">
+            <name type="pref">Lithografie</name>
+            <listRelation>
+              <relation type="http://erlangen-crm.org/current/" name="P14_carried_out_by" active="#P.0000004" passive="#W.0000111"/>
+            </listRelation>
+          </item>
+          <item xml:id="W.0000113" n="artwork">
+            <name>3. Lithografien</name>
+            <name type="pref">Lithografien</name>
+            <listRelation>
+              <relation type="http://erlangen-crm.org/current/" name="P14_carried_out_by" active="#P.0000004" passive="#W.0000113"/>
+            </listRelation>
+          </item>
+          <item xml:id="W.0000039" n="artwork">
+            <name type="pref">Mandrill</name>
+            <listRelation>
+              <relation type="http://erlangen-crm.org/current/" name="P14_carried_out_by" active="#P.0000003" passive="#W.0000039"/>
+            </listRelation>
+          </item>
+          <item xml:id="W.0000143" n="newspaper">
+            <name type="pref">Middelburgsche Courant</name>
+          </item>
+          <item source="http://d-nb.info/gnd/4735095-7" xml:id="W.0000110" n="newspaper">
+            <name>Nationalzeitung</name>
+            <name type="pref">National-Zeitung</name>
+          </item>
+          <item source="http://www.wikidata.org/entity/Q1989439" xml:id="W.0000077" n="newspaper">
+            <name>Rotterdammer</name>
+            <name>de N. Rotterdamsche Courant</name>
+            <name type="pref">Nieuwe Rotterdamsche Courant</name>
+            <name>N. Rotterdammer</name>
+          </item>
+          <item source="http://d-nb.info/361267355" xml:id="W.0000065" n="book">
+            <name type="pref">Nissen, Benedikt Momme: Der Krieg und die deutsche Kunst. Den
+              kunstliebenden Deutschen beider Kaiserreiche. Freiburg i. B. 1914.</name>
+            <listRelation>
+              <relation type="http://erlangen-crm.org/current/" name="P14_carried_out_by" active="#P.0000086" passive="#W.0000065"/>
+            </listRelation>
+          </item>
+          <item xml:id="W.0000047" n="artwork">
+            <name type="pref">No 160</name>
+            <listRelation>
+              <relation type="http://erlangen-crm.org/current/" name="P14_carried_out_by" active="#P.0000003" passive="#W.0000047"/>
+            </listRelation>
+          </item>
+          <item xml:id="W.0000040" n="artwork">
+            <name type="pref">No. 16 Figur</name>
+            <listRelation>
+              <relation type="http://erlangen-crm.org/current/" name="P14_carried_out_by" active="#P.0000004" passive="#W.0000040"/>
+            </listRelation>
+          </item>
+          <item source="http://data.bnf.fr/32832579/paris-journal__paris__1908_/" xml:id="W.0000179" n="newspaper">
+            <name type="pref">Paris-Journal</name>
+          </item>
+          <item xml:id="W.0000041" n="artwork">
+            <name type="pref">Porträt</name>
+            <listRelation>
+              <relation type="http://erlangen-crm.org/current/" name="P14_carried_out_by" active="#P.0000004" passive="#W.0000041"/>
+            </listRelation>
+          </item>
+          <item xml:id="W.0000140" n="journal">
+            <name>Gesellsch: Sturmfreunde Prospekt</name>
+            <name type="pref">Prospekt der Gesellschaft Sturmfreunde</name>
+          </item>
+          <item xml:id="W.0000062" n="newspaper">
+            <name type="pref">Residentie Bode</name>
+          </item>
+          <item xml:id="W.0000042" n="artwork">
+            <name type="pref">Rinder</name>
+            <listRelation>
+              <relation type="http://erlangen-crm.org/current/" name="P14_carried_out_by" active="#P.0000003" passive="#W.0000042"/>
+            </listRelation>
+          </item>
+          <item source="http://www.wikidata.org/entity/Q27561770" xml:id="W.0000080" n="artwork">
+            <name type="pref">Schafe</name>
+            <name>Bild</name>
+            <listRelation>
+              <relation type="http://erlangen-crm.org/current/" name="P14_carried_out_by" active="#P.0000003" passive="#W.0000080"/>
+            </listRelation>
+          </item>
+          <item source="http://d-nb.info/361684770" xml:id="W.0000067" n="book">
+            <ref target="https://doi.org/10.11588/diglit.27222"/>
+            <name>Sturm Buch</name>
+            <name>Buch</name>
+            <name type="pref">Scheerbart, Paul: Glasarchitektur. Berlin 1914.</name>
+            <listRelation>
+              <relation type="http://erlangen-crm.org/current/" name="P14_carried_out_by" active="#P.0000013" passive="#W.0000067"/>
+            </listRelation>
+          </item>
+          <item xml:id="W.0000115" n="poem">
+            <name>Gedicht</name>
+            <name type="pref">Schlichtkrull, Wilhelm: Gedichte. Für Jacoba van Heemskerck. In: Der
+              Sturm. Halbmonatsschrift für Kultur und die Künste 5 (1919), S. 70f.</name>
+            <listRelation>
+              <relation type="http://erlangen-crm.org/current/" name="P14_carried_out_by" active="#P.0000101" passive="#W.0000115"/>
+            </listRelation>
+          </item>
+          <item xml:id="W.0000043" n="artwork">
+            <name type="pref">Schweine</name>
+            <listRelation>
+              <relation type="http://erlangen-crm.org/current/" name="P14_carried_out_by" active="#P.0000003" passive="#W.0000043"/>
+            </listRelation>
+          </item>
+          <item source="http://d-nb.info/gnd/4099371-1" xml:id="W.0000069" n="drama">
+            <name type="pref">Shakespeare, William: Sturm (1623).</name>
+            <listRelation>
+              <relation type="http://erlangen-crm.org/current/" name="P14_carried_out_by" active="#P.0000074" passive="#W.0000069"/>
+            </listRelation>
+          </item>
+          <item xml:id="W.0000044" n="artwork">
+            <name type="pref">Stallungen</name>
+            <listRelation>
+              <relation type="http://erlangen-crm.org/current/" name="P14_carried_out_by" active="#P.0000003" passive="#W.0000044"/>
+            </listRelation>
+          </item>
+          <item xml:id="W.0000118" n="artwork">
+            <name>2. Steinzeichnungen</name>
+            <name type="pref">Steinzeichnungen</name>
+            <listRelation>
+              <relation type="http://erlangen-crm.org/current/" name="P14_carried_out_by" active="#P.0000004" passive="#W.0000118"/>
+            </listRelation>
+          </item>
+          <item xml:id="W.0000054" n="article">
+            <ref target="https://doi.org/10.11588/diglit.37113#0076"/>
+            <name type="pref">Stramm, August: Geschehen. In: Der Sturm. Halbmonatsschrift für Kultur
+              und die Künste 13/14 (1915), S. 74-80.</name>
+            <listRelation>
+              <relation type="http://erlangen-crm.org/current/" name="P14_carried_out_by" active="#P.0000041" passive="#W.0000054"/>
+            </listRelation>
+          </item>
+          <item source="http://d-nb.info/gnd/4058273-5" xml:id="W.0000068" n="journal">
+            <ref target="https://doi.org/10.11588/diglit.33880#0036"/>
+            <name>Der Sturm</name>
+            <name>Sturm</name>
+            <ref target="https://doi.org/10.11588/diglit.33880.9"/>
+            <ref target="https://doi.org/10.11588/diglit.33880.11"/>
+            <name type="pref">Sturm (Zeitschrift)</name>
+            <ref target="https://doi.org/10.11588/diglit.33880.12"/>
+            <ref target="https://doi.org/10.11588/diglit.33880.13"/>
+            <ref target="https://doi.org/10.11588/diglit.33880#0108"/>
+            <name>der Sturm</name>
+            <ref target="https://doi.org/10.11588/diglit.33880.14"/>
+            <ref target="https://doi.org/10.11588/diglit.33880.15"/>
+            <ref target="https://doi.org/10.11588/diglit.33880.17"/>
+            <ref target="https://doi.org/10.11588/diglit.33880.16"/>
+            <ref target="https://doi.org/10.11588/diglit.37113.2"/>
+            <ref target="https://doi.org/10.11588/diglit.37113.3"/>
+            <name>April-Nummer</name>
+            <name>April nummer</name>
+            <name>Mai nummer</name>
+            <ref target="https://doi.org/10.11588/diglit.37113.5"/>
+            <ref target="https://doi.org/10.11588/diglit.37113.6"/>
+            <ref target="https://doi.org/10.11588/diglit.37113#0052"/>
+            <ref target="https://doi.org/10.11588/diglit.37113.8"/>
+            <name>nächsten Nummer</name>
+            <ref target="https://doi.org/10.11588/diglit.37113.7"/>
+            <ref target="https://doi.org/10.11588/diglit.37113#0064"/>
+            <ref target="https://doi.org/10.11588/diglit.37113.9"/>
+            <name>ein Nummer</name>
+            <ref target="https://doi.org/10.11588/diglit.37113.10"/>
+            <name>Sturmnummern</name>
+            <name>Sturm nummer</name>
+            <name>Sturm nr.</name>
+            <listRelation>
+              <relation type="http://erlangen-crm.org/current/" name="P14_carried_out_by" active="#P.0000001" passive="#W.0000068"/>
+            </listRelation>
+          </item>
+          <item source="http://d-nb.info/gnd/4382699-4" xml:id="W.0000091" n="journal">
+            <name type="pref">The Dial</name>
+          </item>
+          <item source="http://d-nb.info/gnd/4543675-7" xml:id="W.0000076" n="newspaper">
+            <name type="pref">Vaderland</name>
+          </item>
+          <item source="http://d-nb.info/gnd/4188753-0" xml:id="W.0000142" n="newspaper">
+            <name type="pref">Vossische Zeitung</name>
+            <name>Voss. Zeitung</name>
+          </item>
+          <item xml:id="W.0000048" n="artwork">
+            <name type="pref">Wald</name>
+            <listRelation>
+              <relation type="http://erlangen-crm.org/current/" name="P14_carried_out_by" active="#P.0000003" passive="#W.0000048"/>
+            </listRelation>
+          </item>
+          <item xml:id="W.0000165" n="catalogue">
+            <ref target="http://nbn-resolving.org/urn:nbn:de:bvb:255-dtl-0000002284"/>
+            <name>Katalog</name>
+            <name type="pref">Walden, Herwarth (Hrsg.): Der Sturm. Einunddreißigste Ausstellung.
+              Jacoba van Heemskerck. Berlin 1915 (Ausstellungskatalog).</name>
+            <listRelation>
+              <relation type="http://erlangen-crm.org/current/" name="P14_carried_out_by" active="#P.0000001" passive="#W.0000165"/>
+            </listRelation>
+          </item>
+          <item xml:id="W.0000166" n="catalogue">
+            <ref target="http://nbn-resolving.org/urn:nbn:de:bvb:255-dtl-0000002843"/>
+            <name>Katalog</name>
+            <name type="pref">Walden, Herwarth (Hrsg.): Der Sturm. Gemäldeausstellung in
+              Brandenburg/Havel. Neue Kunst. Berlin 1915 (Ausstellungskatalog).</name>
+            <listRelation>
+              <relation type="http://erlangen-crm.org/current/" name="P14_carried_out_by" active="#P.0000001" passive="#W.0000166"/>
+            </listRelation>
+          </item>
+          <item xml:id="W.0000103" n="catalogue">
+            <ref target="https://nbn-resolving.org/urn:nbn:de:bvb:255-dtl-0000003076"/>
+            <name>Katalog</name>
+            <name type="pref">Walden, Herwarth (Hrsg.): Der Sturm. International Kunst.
+              Ekspressionister Og Kubister. Malerier Og Skulpturer. Kopenhagen 1918
+              (Ausstellungskatalog).</name>
+            <listRelation>
+              <relation type="http://erlangen-crm.org/current/" name="P14_carried_out_by" active="#P.0000001" passive="#W.0000103"/>
+            </listRelation>
+          </item>
+          <item xml:id="W.0000116" n="catalogue">
+            <ref target="https://nbn-resolving.org/urn:nbn:de:bvb:255-dtl-0000001350"/>
+            <name>Katalog</name>
+            <name type="pref">Walden, Herwarth (Hrsg.): Der Sturm. Neunundsiebzigste Ausstellung.
+              Johannes Molzahn, Karl Herrmann, Jacoba van Heemskerck. Berlin 1919
+              (Ausstellungskatalog).</name>
+            <listRelation>
+              <relation type="http://erlangen-crm.org/current/" name="P14_carried_out_by" active="#P.0000001" passive="#W.0000116"/>
+            </listRelation>
+          </item>
+          <item xml:id="W.0000168" n="catalogue">
+            <ref target="http://nbn-resolving.org/urn:nbn:de:bvb:255-dtl-0000002325"/>
+            <name>Katalog</name>
+            <name type="pref">Walden, Herwarth (Hrsg.): Der Sturm. Sechsunddreißigste Ausstellung.
+              Graphische Werke. Berlin 1915 (Ausstellungskatalog).</name>
+            <listRelation>
+              <relation type="http://erlangen-crm.org/current/" name="P14_carried_out_by" active="#P.0000001" passive="#W.0000168"/>
+            </listRelation>
+          </item>
+          <item xml:id="W.0000157" n="catalogue">
+            <ref target="https://nbn-resolving.org/urn:nbn:de:bvb:255-dtl-0000002561"/>
+            <name type="pref">Walden, Herwarth (Hrsg.): Der Sturm. Sechsundvierzigste Ausstellung –
+              Franz Marc. Gedächtnis-Ausstellung. Berlin, Der Sturm, 1916
+              (Ausstellungskatalog).</name>
+            <listRelation>
+              <relation type="http://erlangen-crm.org/current/" name="P14_carried_out_by" active="#P.0000001" passive="#W.0000157"/>
+            </listRelation>
+          </item>
+          <item xml:id="W.0000156" n="catalogue">
+            <ref target="https://nbn-resolving.org/urn:nbn:de:bvb:255-dtl-0000002303"/>
+            <name type="pref">Walden, Herwarth (Hrsg.): Der Sturm. Vierunddreißigste Ausstellung –
+              Franz Marc. Berlin, Der Sturm, 1915 (Ausstellungskatalog).</name>
+            <listRelation>
+              <relation type="http://erlangen-crm.org/current/" name="P14_carried_out_by" active="#P.0000001" passive="#W.0000156"/>
+            </listRelation>
+          </item>
+          <item xml:id="W.0000154" n="book">
+            <name>Expressionismus. Die Kunstwende.</name>
+            <name type="pref">Walden, Herwarth (Hrsg.): Expressionismus. Die Kunstwende. Berlin
+              1918.</name>
+            <listRelation>
+              <relation type="http://erlangen-crm.org/current/" name="P14_carried_out_by" active="#P.0000001" passive="#W.0000154"/>
+            </listRelation>
+          </item>
+          <item xml:id="W.0000144" n="lecture">
+            <name type="pref">Walden, Herwarth: Bilder. Walden, Herwarth: Bilder. Vortrag zur
+              Eröffnung der Sturm-Ausstellung in Den Haag.</name>
+            <name>Vortrag</name>
+            <listRelation>
+              <relation type="http://erlangen-crm.org/current/" name="P14_carried_out_by" active="#P.0000001" passive="#W.0000144"/>
+            </listRelation>
+          </item>
+          <item xml:id="W.0000053" n="article">
+            <ref target="https://doi.org/10.11588/diglit.37113#0063"/>
+            <name type="pref">Walden, Herwarth: Nachruf auf August Stramm. In: Der Sturm.
+              Halbmonatsschrift für Kultur und die Künste 11/12 (1915).</name>
+            <listRelation>
+              <relation type="http://erlangen-crm.org/current/" name="P14_carried_out_by" active="#P.0000001" passive="#W.0000053"/>
+            </listRelation>
+          </item>
+          <item xml:id="W.0000045" n="artwork">
+            <name type="pref">Wasserfall</name>
+            <name>Wasserfall am Eis</name>
+            <name>Wasserfall im Eis</name>
+            <listRelation>
+              <relation type="http://erlangen-crm.org/current/" name="P14_carried_out_by" active="#P.0000003" passive="#W.0000045"/>
+            </listRelation>
+          </item>
+          <item xml:id="W.0000002" n="artwork">
+            <ref target="https://doi.org/10.11588/diglit.33880#0069"/>
+            <name type="pref">Zeichnung</name>
+            <listRelation>
+              <relation type="http://erlangen-crm.org/current/" name="P14_carried_out_by" active="#P.0000004" passive="#W.0000002"/>
+            </listRelation>
+          </item>
+          <item xml:id="W.0000003" n="artwork">
+            <ref target="https://doi.org/10.11588/diglit.33880#0139"/>
+            <name type="pref">Zeichnung</name>
+            <listRelation>
+              <relation type="http://erlangen-crm.org/current/" name="P14_carried_out_by" active="#P.0000025" passive="#W.0000003"/>
+            </listRelation>
+          </item>
+          <item xml:id="W.0000149" n="artwork">
+            <name type="pref">Zeichnung 22</name>
+            <listRelation>
+              <relation type="http://erlangen-crm.org/current/" name="P14_carried_out_by" active="#P.0000004" passive="#W.0000149"/>
+            </listRelation>
+          </item>
+          <item xml:id="W.0000148" n="artwork">
+            <name type="pref">Zeichnung 24</name>
+            <listRelation>
+              <relation type="http://erlangen-crm.org/current/" name="P14_carried_out_by" active="#P.0000004" passive="#W.0000148"/>
+            </listRelation>
+          </item>
+          <item xml:id="W.0000147" n="artwork">
+            <name type="pref">Zeichnung 28</name>
+            <listRelation>
+              <relation type="http://erlangen-crm.org/current/" name="P14_carried_out_by" active="#P.0000004" passive="#W.0000147"/>
+            </listRelation>
+          </item>
+          <item xml:id="W.0000119" n="artwork">
+            <name type="pref">Zeichnung 39</name>
+            <listRelation>
+              <relation type="http://erlangen-crm.org/current/" name="P14_carried_out_by" active="#P.0000004" passive="#W.0000119"/>
+            </listRelation>
+          </item>
+          <item xml:id="W.0000049" n="artwork">
+            <name type="pref">Zeichnungen</name>
+            <name>6. Zeichnungen</name>
+            <name>Zeichnungen</name>
+            <listRelation>
+              <relation type="http://erlangen-crm.org/current/" name="P14_carried_out_by" active="#P.0000004" passive="#W.0000049"/>
+            </listRelation>
+          </item>
+          <item xml:id="W.0000089" n="artwork">
+            <name type="pref">Zwei Glasmosaiken</name>
+            <listRelation>
+              <relation type="http://erlangen-crm.org/current/" name="P14_carried_out_by" active="#P.0000004" passive="#W.0000089"/>
+            </listRelation>
+          </item>
+          <item xml:id="W.0000161" n="artwork">
+            <name type="pref">zwei Holzschnitte</name>
+            <listRelation>
+              <relation type="http://erlangen-crm.org/current/" name="P14_carried_out_by" active="#P.0000004" passive="#W.0000161"/>
+            </listRelation>
+          </item>
+        </list>
+      </div>
+    </body>
+  </text>
+</TEI>
