@@ -8,21 +8,19 @@ from os import sync as sync_disk
 from pathlib import Path
 from random import randrange
 from sys import stdout
-from typing import TYPE_CHECKING, Final, Iterable, Iterator, Optional
-
-from fs.memoryfs import MemoryFS
-from fs.osfs import OSFS
-from tqdm import tqdm
+from typing import Final, Iterable, Iterator, Optional, TYPE_CHECKING
 
 from _delb.plugins.core_loaders import path_loader
 from delb import (
-    compare_trees,
     Document,
     FailedDocumentLoading,
     FormatOptions,
     ParserOptions,
+    compare_trees,
 )
-
+from fs.memoryfs import MemoryFS
+from fs.osfs import OSFS
+from tqdm import tqdm
 
 if TYPE_CHECKING:
     from fs.base import FS
@@ -41,7 +39,7 @@ def load_file(filesystem: FS, path: Path, **options) -> Optional[Document]:
     try:
         with filesystem.open(str(path), mode="rb") as f:
             document = Document(f, **options)
-            document.config.source = f"file:///{path}"
+            document.config.source_url = f"file:///{path}"
             return document
     except FailedDocumentLoading as e:
         log.error(f"Failed to load {path.name}: {e.excuses[path_loader]}")
@@ -233,6 +231,12 @@ def main():
     for path, directories, files in results_path.walk(top_down=False):
         if len(directories) + len(files) == 0:
             path.rmdir()
+
+    # it's a mystery where the responsible log handler is configured
+    for file in (
+        f for f in (DIT_PATH / "logs").iterdir() if f.name.startswith("multiprocessing")
+    ):
+        file.unlink()
 
 
 if __name__ == "__main__":
