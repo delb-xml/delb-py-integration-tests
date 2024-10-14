@@ -1,35 +1,44 @@
-all_corpora := "corpora"
-python_files := "*.py corpora/*.py git-submodules/*.py"
+[private]
+default:
+  @just --list
+
+
+_check-for-venv:
+    #!/usr/bin/env python3
+    import sys
+    if sys.prefix == sys.base_prefix:
+        print("Please activate a virtual environment!")
+        raise SystemExit(1)
 
 
 # Fetch web resources
 fetch-web-resources *args:
-    python corpora/fetch-web-resources.py {{args}}
+    dit corpora fetch-web-resources {{args}}
 
 
 # Formats and lints scripts
 format-and-lint:
-    black {{python_files}}
-    mypy --check-untyped-defs {{python_files}}
-    flake8 --max-line-length 89 {{python_files}}
+    black src/
+    mypy --check-untyped-defs src/
+    flake8 --ignore LOG011 --max-line-length 89 src/
 
 
-# Link all git submodule contents in the data directory
-link-submodules:
-    python corpora/link-submodules.py
+# Sets everything up to run the tests from a fresh clone
+get-ready: _check-for-venv
+    pip install -e .
+    git submodule update
 
 
 # Excutes maintenace tasks
 maintenance:
-    rm logs/multiprocessing-*
     find logs -name "*.log" -mtime +7
-    git submodule foreach git clean
+    git submodule foreach git clean --force
     git submodule foreach git gc
 
 
 # Normalizes contents of included git submodules
-normalize-submodules *args:
-    python git-submodules/normalize.py {{args}}
+normalize-corpora *args:
+    dit corpora normalize {{args}}
 
 
 # Pushes 'delb-integration-tests' branch of corpus submodules to remotes, overwriting existing instances
@@ -38,8 +47,12 @@ push-submodules:
       git push --force origin delb-integration-tests:delb-integration-tests
 
 
-# Run all tests
-run-tests *args:
-    python test-location-paths.py {{args}}
-    python test-lxml-model-concordance.py {{args}}
-    python test-parse-serialize-equality.py {{args}}
+# Calculate and report some corpus statistics
+summarize:
+    dit corpora summarize
+
+
+# Run tests
+run-tests:
+    dit tests run --sample-volume 25 location-paths
+    dit tests run lxml-model-concordance parse-serialize-equality

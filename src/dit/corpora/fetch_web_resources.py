@@ -1,6 +1,6 @@
+import argparse
 import asyncio
 import io
-from argparse import ArgumentParser, Namespace
 from pathlib import Path
 from typing import Final
 
@@ -8,9 +8,7 @@ import delb
 from httpx import AsyncClient, HTTPError, HTTPStatusError
 from stamina import retry
 
-
-CORPORA = Path(__file__).parent
-
+from dit.commons import CORPORA_PATH
 
 # helper
 
@@ -52,27 +50,19 @@ async def fetch_sturm_edition(target: Path):
 TASKS = {fetch_sturm_edition: "sturm-edition"}
 
 
-# cli
+#
 
 
-def parse_args() -> Namespace:
-    parser = ArgumentParser()
-    parser.add_argument("--skip-existing", "-s", action="store_true")
-    return parser.parse_args()
-
-
-async def main():
-    args = parse_args()
-    CORPORA.mkdir(exist_ok=True)
+async def dispatch_tasks(args: argparse.Namespace):
     async with asyncio.TaskGroup() as tasks:
         for func, folder in TASKS.items():
-            target = CORPORA / folder
+            target = CORPORA_PATH / folder
             if args.skip_existing and target.exists():
                 continue
-            target.mkdir(exist_ok=True)
+            target.mkdir(exist_ok=True, parents=True)
             tasks.create_task(func(target))
     await http_client.aclose()
 
 
-if __name__ == "__main__":
-    asyncio.run(main())
+def cmd_fetch_web_resources(args: argparse.Namespace):
+    asyncio.run(dispatch_tasks(args))

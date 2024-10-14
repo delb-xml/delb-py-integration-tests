@@ -8,7 +8,6 @@ from pathlib import Path
 from typing import Final
 
 
-CWD: Final = Path.cwd().resolve()
 ENTITIES_FILE: Final = Path("schema/entities.dtd")
 
 
@@ -24,13 +23,9 @@ async def normalize_file(file: Path):
         file.write_bytes(contents)
 
 
-async def main():
-    (CWD / ENTITIES_FILE).rename(CWD / ENTITIES_FILE.name)
+async def main(files: set[Path]):
+    ENTITIES_FILE.rename(ENTITIES_FILE.name)
 
     async with asyncio.TaskGroup() as tasks:
-        for file in CWD.glob("*.xml"):
+        for file in files:
             tasks.create_task(normalize_file(file))
-
-
-if __name__ == "__main__":
-    asyncio.run(main())
