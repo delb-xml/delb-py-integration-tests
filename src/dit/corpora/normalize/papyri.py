@@ -26,4 +26,9 @@ async def normalize_file(file: Path):
 async def main(files: set[Path]):
     async with asyncio.TaskGroup() as tasks:
         for file in files:
+            # a colossal example why large structured data as XML is no good idea,
+            # out of the project's scope
+            if file.name.startswith("HGV_metadata"):
+                file.unlink()
+                continue
             tasks.create_task(normalize_file(file))
