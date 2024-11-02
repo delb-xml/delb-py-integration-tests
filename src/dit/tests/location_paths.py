@@ -15,7 +15,7 @@ from delb import (
 
 from dit.tests._test_base import TestCaseBase
 
-traverse = get_traverser(True, True, True)
+traverse = get_traverser(from_left=True, depth_first=True, from_top=True)
 
 
 class TestCase(TestCaseBase):
