@@ -39,11 +39,11 @@ class TestCase(TestCaseBase):
             return None
 
     def maintain(self):
-        for file in self.work_fs.glob("**/*.xml"):
-            target = self.results_path / file.path[1:]
+        for path in (f.path for f in self.work_fs.glob("**/*.xml")):
+            target = self.results_path / path.removeprefix("/")
             target.parent.mkdir(parents=True, exist_ok=True)
-            target.write_bytes(self.work_fs.readbytes(file.path))
-            self.work_fs.remove(file)
+            target.write_bytes(self.work_fs.readbytes(path))
+            self.work_fs.remove(path)
 
         sync_disk()
 
