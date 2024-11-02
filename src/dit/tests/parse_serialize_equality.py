@@ -4,7 +4,7 @@ from os import sync as sync_disk
 from pathlib import Path
 from typing import Optional, TYPE_CHECKING
 
-from _delb.plugins.core_loaders import path_loader
+from _delb.plugins.core_loaders import buffer_loader
 from delb import (
     Document,
     FailedDocumentLoading,
@@ -33,11 +33,9 @@ class TestCase(TestCaseBase):
     def load_file(self, filesystem: FS, path: Path, **options) -> Optional[Document]:
         try:
             with filesystem.open(str(path), mode="rb") as f:
-                document = Document(f, **options)
-                document.config.source_url = f"file:///{path}"
-                return document
+                return Document(f, **options)
         except FailedDocumentLoading as e:
-            self.error(f"Failed to load {path.name}: {e.excuses[path_loader]}")
+            self.error(f"Failed to load {path.name}: {e.excuses[buffer_loader]}")
             return None
 
     def maintain(self):
