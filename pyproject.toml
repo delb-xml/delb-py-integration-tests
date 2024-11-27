@@ -4,7 +4,7 @@ build-backend = "setuptools.build_meta"
 
 [project]
 name = "dit"
-version = "2024.10.0"
+version = "2024.11.0"
 dependencies = [
   "black",
   "flake8",
@@ -16,7 +16,7 @@ dependencies = [
   "tqdm",
   "types-lxml",
   "types-tqdm",
-  # and a delb installation
+  # and a delb 0.5 installation
 ]
 requires-python = ">=3.12"
 
