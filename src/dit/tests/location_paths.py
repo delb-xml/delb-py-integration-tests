@@ -33,17 +33,30 @@ class TestCase(TestCaseBase):
             self.error(f"Failed to load {file.name}: {exc.excuses[path_loader]}")
             return
 
-        root = document.root
-        for node in traverse(root, is_tag_node):
+        document_clone = document.clone()
+
+        for node in traverse(document.root, is_tag_node):
             if random.randint(1, 100) > sample_volume:
                 continue
 
             assert isinstance(node, TagNode)
-            query_results = document.xpath(node.location_path)
+            query_results = document.xpath(node.location_path, namespaces={})
             if not (query_results.size == 1 and query_results.first is node):
                 self.error(
                     f"XPath query `{node.location_path}` in {file} yielded unexpected "
                     "results."
+                )
+
+            query_results = document_clone.xpath(node.location_path, namespaces={})
+            if not (
+                query_results.size == 1
+                and isinstance(node := query_results.first, TagNode)
+                and node.universal_name == node.universal_name
+                and node.attributes == node.attributes
+            ):
+                self.error(
+                    f"XPath query `{node.location_path}` in a clone of {file} yielded "
+                    "unexpected results."
                 )
 
     def finalize(self):
