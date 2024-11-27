@@ -24,7 +24,7 @@ fetch-web-resources *args:
 format-and-lint:
     black src/
     mypy --check-untyped-defs src/
-    flake8 --ignore LOG011 --max-line-length 89 src/
+    flake8 --ignore LOG011,W503 --max-line-length 89 src/
 
 
 # Sets everything up to run the tests from a fresh clone

@@ -24,7 +24,13 @@ class TestCase(TestCaseBase):
     def compare_attributes(self):
         for name, value in self.element.attrib.items():
             assert isinstance(self.reference, TagNode)  # type narrowing
-            attribute = self.reference.attributes[name]
+            attribute = self.reference.attributes[
+                (
+                    name
+                    if name.startswith("{")
+                    else (self.element.nsmap.get(None, ""), name)
+                )
+            ]
             assert attribute is not None, f"Missing attribute: {name}"
             assert value == attribute.value, f"Mismatching attribute value: {name}"
 
@@ -70,7 +76,7 @@ class TestCase(TestCaseBase):
 
     def error(self, message: str, exception: bool = False):
         super().error(message, exception)
-        self.log.error(f"Element: {self.element!r}")
+        self.log.error(f"Element: {self.element!r}, {self.element.attrib}")
         self.log.error(f"Node: {self.reference!r}")
 
     def next_reference(self) -> NodeBase:
