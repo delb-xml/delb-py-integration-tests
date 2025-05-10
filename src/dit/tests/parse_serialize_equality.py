@@ -2,7 +2,7 @@ from __future__ import annotations
 
 from os import sync as sync_disk
 from pathlib import Path
-from typing import Optional, TYPE_CHECKING
+from typing import Final, Optional, TypedDict, TYPE_CHECKING
 
 from _delb.plugins.core_loaders import buffer_loader
 from delb import (
@@ -24,9 +24,20 @@ if TYPE_CHECKING:
 #
 
 
-class TestCase(TestCaseBase):
-    maintenance_interval = 100
+class CommonParserOptions(TypedDict):
+    load_referenced_resources: bool
+    preferred_parsers: str
+    unplugged: bool
 
+
+COMMON_PARSER_OPTIONS: Final[CommonParserOptions] = {
+    "load_referenced_resources": True,
+    "preferred_parsers": "expat",
+    "unplugged": True,
+}
+
+
+class TestCase(TestCaseBase):
     def finalize(self):
         self.maintain()
 
@@ -67,8 +78,9 @@ class TestCase(TestCaseBase):
                 self.work_fs,
                 result_file,
                 parser_options=ParserOptions(
-                    reduce_whitespace=reduce_whitespace, unplugged=True
+                    reduce_whitespace=reduce_whitespace, **COMMON_PARSER_OPTIONS
                 ),
+                source_url=(self.args.corpus_path / result_file).as_uri(),
             )
         ) is None:
             return
@@ -84,15 +96,17 @@ class TestCase(TestCaseBase):
         try:
             with filesystem.open(str(path), mode="wb") as f:
                 document.write(f, **options)  # type: ignore
-        except Exception:
-            self.error(f"Failed to save {path.name}:", exception=True)
+        except Exception as e:
+            self.log.error(f"Failed to save {path.name}:")
+            self.error(e)
             return False
         else:
             return True
 
     def test(self, file: Path):
-        file = file.relative_to(self.args.corpus_path)
-        self.src_fs = OSFS(str(self.args.corpus_path))
+        corpus_path = self.args.corpus_path
+        file = file.relative_to(corpus_path)
+        self.src_fs = OSFS(str(corpus_path))
 
         # unaltered whitespace
 
@@ -100,7 +114,10 @@ class TestCase(TestCaseBase):
             origin := self.load_file(
                 self.src_fs,
                 file,
-                parser_options=ParserOptions(reduce_whitespace=False, unplugged=True),
+                parser_options=ParserOptions(
+                    reduce_whitespace=False, **COMMON_PARSER_OPTIONS
+                ),
+                source_url=(corpus_path / file).as_uri(),
             )
         ) is None:
             return

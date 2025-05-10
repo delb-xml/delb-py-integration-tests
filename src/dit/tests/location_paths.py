@@ -25,9 +25,7 @@ class TestCase(TestCaseBase):
         try:
             document = Document(
                 file,
-                parser_options=ParserOptions(
-                    reduce_whitespace=False, resolve_entities=False, unplugged=True
-                ),
+                parser_options=ParserOptions(reduce_whitespace=False, unplugged=True),
             )
         except FailedDocumentLoading as exc:
             self.error(f"Failed to load {file.name}: {exc.excuses[path_loader]}")

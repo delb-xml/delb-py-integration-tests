@@ -1,6 +1,7 @@
 import argparse
 import logging
 import multiprocessing as mp
+import warnings
 from contextlib import contextmanager
 from enum import Flag, auto
 from logging.handlers import QueueHandler
@@ -41,11 +42,12 @@ class TestCaseBase(mp.Process):
         self._worker_states = worker_states
         super().__init__()
 
-    def error(self, message: str, exception: bool = False):
-        if exception:
-            self.log.exception(message)
+    def error(self, error: str | Exception):
+        if isinstance(error, Exception):
+            self.log.exception(error)
         else:
-            self.log.error(message)
+            assert isinstance(error, str)
+            self.log.error(error)
         assert self.pid is not None
         with self._errors.get_lock():
             self._errors.value += 1
@@ -64,6 +66,7 @@ class TestCaseBase(mp.Process):
         pass
 
     def run(self):
+        warnings.filterwarnings("ignore", "No encoding known for parsing", UserWarning)
         self._setup_logging()
         with self.__set_state(WorkerState.PREPARING):
             self.prepare()
@@ -76,10 +79,9 @@ class TestCaseBase(mp.Process):
                 self.log.debug(f"Testing against {file}")
                 with self.__set_state(WorkerState.TESTING):
                     self.test(file)
-            except AssertionError as e:
-                self.error(e.args[0])
-            except Exception:
-                self.error(f"Unhandled exception while testing {file}:", True)
+            except Exception as e:
+                self.log.error(f"Unhandled exception while testing {file}:")
+                self.error(e)
             finally:
                 self._file_queue.task_done()
 
