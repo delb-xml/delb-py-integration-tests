@@ -95,7 +95,7 @@ class TestCase(TestCaseBase):
                 Document(
                     file,
                     parser_options=ParserOptions(
-                        load_referenced_resources=True,
+                        load_referenced_resources=parser != "lxml",
                         preferred_parsers=parser,
                         reduce_whitespace=False,
                         unplugged=True,
