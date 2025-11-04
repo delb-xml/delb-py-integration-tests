@@ -45,6 +45,87 @@ CONTENT_ROOTS: Final = {
 }
 FILE_SIZE_LIMIT: Final = 10 * 1024**2
 GIT_BRANCH: Final = "delb-integration-tests"
+IGNORED_FILES: Final = {
+    # faust-edition; commit fc05c17b989a31df9e6b2e536b81fe4bd6638919
+    #
+    # Redundantly used xml:id: le
+    "transcript ▸ gm_duesseldorf ▸ KK123_20 ▸ 01.xml",
+    # Redundantly used xml:id: lb
+    "transcript ▸ gsa ▸ 389773 ▸ 0002.xml",
+    #
+    # papyri; commit 87e35ebd2144e791fa6f1d2c70f9d0d0a91fcfb4
+    #
+    # Redundantly used xml:id: asteriskos
+    "charDecl.xml",
+    # xml:id : attribute value pap(B) is not an NCName
+    "APD ▸ apd12t.xml",
+    # xml:id : attribute value pap(A) is not an NCName
+    "APD ▸ apd16t.xml",
+    # xml:id : attribute value pap(C) is not an NCName
+    "APD ▸ apd17t.xml",
+    # xml:id : attribute value pap(D) is not an NCName
+    "APD ▸ apd18t.xml",
+    # xml:id : attribute value pap(E) is not an NCName
+    "APD ▸ apd21t.xml",
+    # xml:id : attribute value pap(F) is not an NCName
+    "APD ▸ apd22t.xml",
+    # xml:id : attribute value pap(G) is not an NCName
+    "APD ▸ apd23t.xml",
+    # 30:362: mismatched tag
+    "APD ▸ apd24t.xml",
+    # xml:id : attribute value pap(I) is not an NCName
+    "APD ▸ apd25t.xml",
+    # xml:id : attribute value pap(K) is not an NCName
+    "APD ▸ apd26t.xml",
+    # xml:id : attribute value pap(L) is not an NCName
+    "APD ▸ apd27t.xml",
+    # xml:id : attribute value pap(2) is not an NCName
+    "APD ▸ apd32t.xml",
+    # 30:557: mismatched tag
+    "APD ▸ apd34t.xml",
+    # xml:id : attribute value pap(4) is not an NCName
+    "APD ▸ apd35t.xml",
+    # xml:id : attribute value pap(5) is not an NCName
+    "APD ▸ apd36t.xml",
+    # xml:id : attribute value pap(6) is not an NCName
+    "APD ▸ apd37t.xml",
+    # xml:id : attribute value pap(10) is not an NCName
+    "APD ▸ apd41t.xml",
+    # xml:id : attribute value pap(11) is not an NCName
+    "APD ▸ apd42t.xml",
+    # xml:id : attribute value pap(13) is not an NCName
+    "APD ▸ apd44t.xml",
+    # xml:id : attribute value pap(14) is not an NCName
+    "APD ▸ apd45t.xml",
+    # xml:id : attribute value pap(15) is not an NCName
+    "APD ▸ apd46t.xml",
+    # xml:id : attribute value pap(16) is not an NCName
+    "APD ▸ apd47t.xml",
+    # xml:id : attribute value pap(17) is not an NCName
+    "APD ▸ apd48t.xml",
+    # xml:id : attribute value pap(18) is not an NCName
+    "APD ▸ apd49t.xml",
+    # xml:id : attribute value pap(21) is not an NCName
+    "APD ▸ apd50t.xml",
+    # 30:253: mismatched tag
+    "APD ▸ apd51t.xml",
+    # 30:2233: mismatched tag
+    "APD ▸ apd56t.xml",
+    # xml:id : attribute value pap(19) is not an NCName
+    "APD ▸ apd57t.xml",
+    # xml:id : attribute value pap(23new) is not an NCName
+    "APD ▸ apd59t.xml",
+    # xml:id : attribute value pap(24) is not an NCName
+    "APD ▸ apd60t.xml",
+    # here, an attribute that contains an URL with one LF as character entity appended;
+    # during parsing this gets normalized to an LF character (per XML spec sect. 3.3.3),
+    # delb will serialize this as such, but with this representation, the next parsing
+    # will then drop it (following the same spec); and this difference leads to
+    # failure of the parse-serialize-equality test
+    "HGV_meta_EpiDoc ▸ HGV26 ▸ 25169.xml",
+    # Invalid character: Char 0x0 out of allowed range
+    "HGV_metadata ▸ XML_dump ▸ Glossary.xml",
+}
 
 
 async def normalize_submodule(corpus_path: Path):
@@ -84,11 +165,11 @@ async def normalize_submodule(corpus_path: Path):
             for path in (dirpath / n for n in filenames if n.endswith(".xml"))
             if path.stat().st_size < FILE_SIZE_LIMIT
         ):
-            files.add(
-                file.rename(
-                    corpus_path / " ▸ ".join(file.relative_to(content_path).parts)
-                )
-            )
+            filename = " ▸ ".join(file.relative_to(content_path).parts)
+            if filename in IGNORED_FILES:
+                file.unlink()
+            else:
+                files.add(file.rename(corpus_path / filename))
 
     # apply corpus specific filtering and normalization
     try:

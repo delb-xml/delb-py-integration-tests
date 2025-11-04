@@ -14,11 +14,11 @@ from functools import partial
 from pathlib import Path
 
 
-cr_ent_to_lf = partial(re.compile(re.escape(b"&#xd;"), flags=re.IGNORECASE).subn, b"\n")
+cr_entity_to_lf_char = partial(re.compile(rb"&#xd;", flags=re.IGNORECASE).subn, b"\n")
 
 
 async def normalize_file(file: Path):
-    contents, subs = cr_ent_to_lf(file.read_bytes())
+    contents, subs = cr_entity_to_lf_char(file.read_bytes())
     if subs:
         file.write_bytes(contents)
 
@@ -26,9 +26,4 @@ async def normalize_file(file: Path):
 async def main(files: set[Path]):
     async with asyncio.TaskGroup() as tasks:
         for file in files:
-            # a colossal example why large structured data as XML is no good idea,
-            # out of the project's scope
-            if file.name.startswith("HGV_metadata"):
-                file.unlink()
-                continue
             tasks.create_task(normalize_file(file))
