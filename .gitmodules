@@ -103,3 +103,6 @@
 [submodule "test-corpus-ELTeC-eng"]
 	path = git-submodules/ELTeC-eng
 	url = git@github.com:delb-xml/test-corpus-ELTeC-eng.git
+[submodule "git-submodules/iip-texts"]
+	path = git-submodules/iip-texts
+	url = git@github.com:delb-xml/test-corpus-iip-texts.git

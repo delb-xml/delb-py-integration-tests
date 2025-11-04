@@ -23,7 +23,6 @@ tested.
 
 - https://www.deutschestextarchiv.de/media/download/dta_kernkorpus_2021-05-13.zip
   - to be used in tests, the corpus must be fixed regarding the `lb`-bug
-- https://github.com/Brown-University-Library/iip-texts/tree/master/epidoc-filesf
 - https://github.com/Brown-University-Library/usep-data/tree/master/xml_inscriptions/transcribed
 - https://github.com/simondschweitzer/aed-tei/tree/master/files
   - includes hieroglyhs and encoding errors

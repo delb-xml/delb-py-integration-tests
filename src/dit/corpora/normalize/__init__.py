@@ -40,6 +40,7 @@ CONTENT_ROOTS: Final = {
     "ELTeC-swe": "level1",
     "ELTeC-ukr": "level1",
     "faust-edition": "xml",
+    "iip-texts": "epidoc-files",
     "medieval-manuscripts-oxford": "collections",
     "ride": "tei_all",
 }
@@ -52,6 +53,20 @@ IGNORED_FILES: Final = {
     "transcript ▸ gm_duesseldorf ▸ KK123_20 ▸ 01.xml",
     # Redundantly used xml:id: lb
     "transcript ▸ gsa ▸ 389773 ▸ 0002.xml",
+    #
+    # iip-texts; commit 0b7dc8358ccdfd0c9391f049da4839fbd91c26e5
+    #
+    # git merge artifacts
+    "bqut0002.xml",
+    "caes0433.xml",
+    "sepp0018.xml",
+    "sepp0019.xml",
+    "sepp0020.xml",
+    "sepp0021.xml",
+    "sepp0024.xml",
+    # Redundantly used xml:id
+    "suhm0001.xml",
+    "zoor0453.xml",
     #
     # papyri; commit 87e35ebd2144e791fa6f1d2c70f9d0d0a91fcfb4
     #
