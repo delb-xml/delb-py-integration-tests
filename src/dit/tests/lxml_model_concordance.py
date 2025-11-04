@@ -2,17 +2,12 @@ from __future__ import annotations
 
 from pathlib import Path
 
-from delb import (
-    CommentNode,
-    Document,
-    NodeBase,
-    ParserOptions,
-    ProcessingInstructionNode,
-    TagNode,
-    TextNode,
-    altered_default_filters,
-    get_traverser,
-)
+from delb import Document
+from delb.filters import altered_default_filters
+from delb.nodes import CommentNode, ProcessingInstructionNode, TagNode, TextNode
+from delb.parser import ParserOptions
+from delb.typing import XMLNodeType
+from delb.utils import get_traverser
 from lxml import etree
 
 from dit.tests._test_base import TestCaseBase
@@ -33,7 +28,7 @@ class TestCase(TestCaseBase):
 
     def compare_element(self, element: etree._Element):
         self.element = element
-        reference: NodeBase = self.next_reference()
+        reference: XMLNodeType = self.next_reference()
 
         if element.tag is etree.Comment:
             assert isinstance(reference, CommentNode), "Mismatching node type"

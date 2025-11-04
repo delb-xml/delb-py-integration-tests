@@ -5,13 +5,10 @@ from pathlib import Path
 from typing import Final, Optional, TypedDict, TYPE_CHECKING
 
 from _delb.plugins.core_loaders import buffer_loader
-from delb import (
-    Document,
-    FailedDocumentLoading,
-    FormatOptions,
-    ParserOptions,
-    compare_trees,
-)
+from delb import Document, FormatOptions
+from delb.exceptions import FailedDocumentLoading
+from delb.parser import ParserOptions
+from delb.utils import compare_trees
 from fs.memoryfs import MemoryFS
 from fs.osfs import OSFS
 

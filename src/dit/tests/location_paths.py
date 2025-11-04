@@ -4,14 +4,12 @@ import random
 from pathlib import Path
 
 from _delb.plugins.core_loaders import path_loader
-from delb import (
-    Document,
-    FailedDocumentLoading,
-    ParserOptions,
-    TagNode,
-    get_traverser,
-    is_tag_node,
-)
+from delb import Document
+from delb.exceptions import FailedDocumentLoading
+from delb.filters import is_tag_node
+from delb.nodes import TagNode
+from delb.parser import ParserOptions
+from delb.utils import get_traverser
 
 from dit.tests._test_base import TestCaseBase
 
